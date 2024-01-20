@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "TTlPstwsEKk9ihhJhBViIUYvTToRbphm6lvVHEs5Ptij2SZFnIyw+MZUlKk8Dm7Ghu1oIYD5qls4b87tkWLTbw==",
+  "dgSpecHash": "FOKYmQ6QVtKkeFCkX+/bE2jOwvytQVIZwy7cF2Y3YVrNjss2bJzQI2E31yuAwGpuys3aT5+jG/LExzJoed/UfA==",
   "success": true,
   "projectFilePath": "C:\\Users\\mario\\Documents\\Proyectos\\DemoCopernicus\\src\\CustomersService\\CustomersService.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mario\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.15\\microsoft.aspnetcore.openapi.7.0.15.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\mario\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\mario\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.0\\microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.15\\microsoft.entityframeworkcore.7.0.15.nupkg.sha512",

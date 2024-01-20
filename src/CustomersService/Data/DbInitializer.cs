@@ -7,7 +7,7 @@ namespace CustomersServise.Data;
 
 public class DbInitializer
 {
-    public static void InitDB(WebApplication app)
+    public static void InitDb(WebApplication app)
     {
         using var scope = app.Services.CreateScope();
 
