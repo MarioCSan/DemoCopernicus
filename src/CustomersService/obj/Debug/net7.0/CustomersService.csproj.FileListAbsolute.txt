@@ -71,3 +71,8 @@ C:\Users\mario\Documents\Proyectos\DemoCopernicus\src\CustomersService\obj\Debug
 C:\Users\mario\Documents\Proyectos\DemoCopernicus\src\CustomersService\obj\Debug\net7.0\CustomersService.genruntimeconfig.cache
 C:\Users\mario\Documents\Proyectos\DemoCopernicus\src\CustomersService\obj\Debug\net7.0\ref\CustomersService.dll
 C:\Users\mario\Documents\Proyectos\DemoCopernicus\src\CustomersService\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\mario\Documents\Proyectos\DemoCopernicus\src\CustomersService\bin\Debug\net7.0\Humanizer.dll
+C:\Users\mario\Documents\Proyectos\DemoCopernicus\src\CustomersService\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\mario\Documents\Proyectos\DemoCopernicus\src\CustomersService\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\mario\Documents\Proyectos\DemoCopernicus\src\CustomersService\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\mario\Documents\Proyectos\DemoCopernicus\src\CustomersService\bin\Debug\net7.0\System.CodeDom.dll
