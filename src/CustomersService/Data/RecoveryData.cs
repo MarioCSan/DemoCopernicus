@@ -18,7 +18,6 @@ public class RecoveryData
                 // Realizar la solicitud HTTP GET y obtener la respuesta
                 HttpResponseMessage response = await httpClient.GetAsync(url);
 
-
                 // Verificar si la solicitud fue exitosa (código 200)
                 if (response.IsSuccessStatusCode)
                 {
@@ -51,8 +50,6 @@ public class RecoveryData
                 Console.WriteLine($"Error al deserializar JSON: {ex.Message}");
                 return null;
             }
-
-
         }
     }
 }

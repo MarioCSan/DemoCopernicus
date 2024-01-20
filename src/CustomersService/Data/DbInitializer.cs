@@ -16,7 +16,6 @@ public class DbInitializer
     private static async void RecuperarDatos(ClientesDbContext context)
     {
 
-    
         context.Database.Migrate();
 
         if (context.Clientes.Any())
@@ -26,7 +25,7 @@ public class DbInitializer
         }
 
         List<Cliente> clientesRecuperados = await RecoveryData.RecoveryDataGithub();
-        
+
         context.AddRange(clientesRecuperados);
 
         context.SaveChanges();
