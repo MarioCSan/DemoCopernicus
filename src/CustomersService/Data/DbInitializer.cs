@@ -7,13 +7,13 @@ namespace CustomersServise.Data;
 
 public class DbInitializer
 {
-    public static void InitDb(WebApplication app)
+    public static async void InitDb(WebApplication app)
     {
         using var scope = app.Services.CreateScope();
 
-        RecuperarDatos(scope.ServiceProvider.GetService<ClientesDbContext>());
+       await RecuperarDatos(scope.ServiceProvider.GetService<ClientesDbContext>());
     }
-    private static async void RecuperarDatos(ClientesDbContext context)
+    private static async Task RecuperarDatos(ClientesDbContext context)
     {
 
         context.Database.Migrate();
@@ -25,10 +25,14 @@ public class DbInitializer
         }
 
         List<Cliente> clientesRecuperados = await RecoveryData.RecoveryDataGithub();
+      
+        context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT dbo.Clientes ON");
 
         context.AddRange(clientesRecuperados);
 
-        context.SaveChanges();
+        await context.SaveChangesAsync();
+
+        context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT dbo.Clientes OFF");
 
     }
 

@@ -6,12 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<ClientesDbContext>(opt=>
-{
-    opt.UseSqlServer(
-        builder.Configuration.GetConnectionString("DockerConnection")
-    );
-});
+builder.Services.AddDbContext<ClientesDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DockerConnection")),
+    ServiceLifetime.Transient); // o ServiceLifetime.Scoped si es apropiado
+
 
 var app = builder.Build();
 

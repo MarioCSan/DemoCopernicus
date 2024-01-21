@@ -1,21 +1,18 @@
-version: '3.8'
-
 services:
-  sql-server:
-    image: mcr.microsoft.com/mssql/server
+
+  mssql:
     container_name: sql-server-container
+    hostname: mssql-db
+    image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
-      SA_PASSWORD: "PassW0rd1"
-      ACCEPT_EULA: "Y"
-    ports:
-      - 1433:1433
-    networks:
-      - sql-network
+      ACCEPT_EULA: 'Y'
+      MSSQL_SA_PASSWORD: 'PassW0rd1'
+      MSSQL_DATA_DIR: /var/opt/mssql/data
+      MSSQL_PID: 'Developer' 
+      MSSQL_TCP_PORT: 1433 
+    ports: 
+      - "1433:1433"
     volumes:
-      - sqldata:/var/opt/mssql
-      - sqllog:/var/opt/sqlserver
-networks:
-  sql-network:
-volumes:
-  sqldata:
-  sqllog:
+      - ./data:/var/opt/mssql/data
+      - ./log:/var/opt/mssql/log
+      - ./secrets:/var/opt/mssql/secrets
