@@ -1,9 +1,9 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CustomersServise.Entities;
 
 public class Cliente{
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id {get;set;}
     public String Email {get;set;}
     public String First {get;set;}

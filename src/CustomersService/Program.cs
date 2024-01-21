@@ -7,8 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<ClientesDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DockerConnection")),
-    ServiceLifetime.Transient); // o ServiceLifetime.Scoped si es apropiado
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DockerConnection"))
+      .EnableSensitiveDataLogging(true)
+           .EnableDetailedErrors(true)
+           , ServiceLifetime.Transient)
+    ; // o ServiceLifetime.Scoped si es apropiado
 
 
 var app = builder.Build();
@@ -22,7 +25,7 @@ app.MapControllers();
 
 try
 {
-   DbInitializer.InitDb(app);
+    DbInitializer.InitDb(app);
 }
 catch (Exception e)
 {

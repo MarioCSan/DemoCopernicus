@@ -25,15 +25,12 @@ public class DbInitializer
         }
 
         List<Cliente> clientesRecuperados = await RecoveryData.RecoveryDataGithub();
-      
-        context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT dbo.Clientes ON");
+              
 
         context.AddRange(clientesRecuperados);
 
         await context.SaveChangesAsync();
 
-        context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT dbo.Clientes OFF");
-
-    }
+      }
 
 }
