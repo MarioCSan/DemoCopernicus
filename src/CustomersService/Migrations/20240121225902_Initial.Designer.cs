@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CustomersService.Migrations
 {
     [DbContext(typeof(ClientesDbContext))]
-    [Migration("20240121225052_Initial")]
+    [Migration("20240121225902_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -27,11 +27,11 @@ namespace CustomersService.Migrations
 
             modelBuilder.Entity("CustomersServise.Entities.Cliente", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("indiceBD")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("indiceBD"));
 
                     b.Property<string>("Country")
                         .HasColumnType("nvarchar(max)");
@@ -45,10 +45,13 @@ namespace CustomersService.Migrations
                     b.Property<string>("First")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
                     b.Property<string>("Last")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("indiceBD");
 
                     b.ToTable("Clientes");
                 });

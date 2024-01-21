@@ -26,6 +26,12 @@ public class DbInitializer
 
         List<Cliente> clientesRecuperados = await RecoveryData.RecoveryDataGithub();
 
+        foreach (var cliente in clientesRecuperados)
+        {
+            // Asigna manualmente el Id del cliente desde el JSON
+            context.Clientes.Add(cliente);
+        }
+
         context.AddRange(clientesRecuperados);
 
         await context.SaveChangesAsync();
