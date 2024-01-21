@@ -21,11 +21,11 @@ public class AuctionController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<List<ClienteDTO>>> GetAllCustomer()
     {
-        var auctions = await _context.Clientes
+        var clientes = await _context.Clientes
             .OrderBy(x => x.Id)
             .ToListAsync();
             
-        return _mapper.Map<List<ClienteDTO>>(auctions);
+        return _mapper.Map<List<ClienteDTO>>(clientes);
     }
 
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vtprODdyfOlMw+eSuc4zKgLPgAfusuC5hY2O7OSW5fFafx/CdA5ZFOPUAytAYkJ4uXuFM+1us55laG8pnqYIZA==",
+  "dgSpecHash": "5OvpRs+OFnCYPpTffpJVEXlDpT6xEczSTTS3ix0nR9jdH/nIWpPrrChtRwZtymZnshHbst5/HQ0H67vu5cCwbg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\mario\\Documents\\Proyectos\\DemoCopernicus\\src\\CustomersService\\CustomersService.csproj",
+  "projectFilePath": "C:\\Users\\mario\\Documents\\Proyectos\\DemoCopernicus\\src\\CustomersService\\CustomersService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mario\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",

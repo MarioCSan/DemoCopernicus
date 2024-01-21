@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace CustomersService.Data.Migrations
+namespace CustomersService.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -20,8 +20,7 @@ namespace CustomersService.Data.Migrations
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     First = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Last = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Company = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CreayedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
                     Country = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>

@@ -4,19 +4,16 @@ using CustomersServise.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace CustomersService.Data.Migrations
+namespace CustomersService.Migrations
 {
     [DbContext(typeof(ClientesDbContext))]
-    [Migration("20240121171013_CambioColumnasParaColumna")]
-    partial class CambioColumnasParaColumna
+    partial class ClientesDbContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -28,7 +25,10 @@ namespace CustomersService.Data.Migrations
             modelBuilder.Entity("CustomersServise.Entities.Cliente", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Country")
                         .HasColumnType("nvarchar(max)");

@@ -11,7 +11,7 @@ public class DbInitializer
     {
         using var scope = app.Services.CreateScope();
 
-       await RecuperarDatos(scope.ServiceProvider.GetService<ClientesDbContext>());
+        await RecuperarDatos(scope.ServiceProvider.GetService<ClientesDbContext>());
     }
     private static async Task RecuperarDatos(ClientesDbContext context)
     {
@@ -25,12 +25,11 @@ public class DbInitializer
         }
 
         List<Cliente> clientesRecuperados = await RecoveryData.RecoveryDataGithub();
-              
 
         context.AddRange(clientesRecuperados);
 
         await context.SaveChangesAsync();
 
-      }
+    }
 
 }
