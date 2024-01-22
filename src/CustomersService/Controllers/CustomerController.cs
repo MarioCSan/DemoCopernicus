@@ -59,7 +59,7 @@ public class clienteController : ControllerBase
 
         _context.Clientes.Add(cliente);
 
-        var result = await _context.SaveChangesAsync() > 0;
+        var result = await _context.SaveChangesAsync() >= 0;
         // > 0 OK
 
         if (!result) return BadRequest("No se pudieron guardar los datos en la BD");
@@ -74,7 +74,7 @@ public class clienteController : ControllerBase
             .FirstOrDefaultAsync(x => x.Id == id);
 
         if (cliente == null) return NotFound();
-
+        var i = id; 
         
         cliente.Email = updateClienteDTO.Email ?? cliente.Email;
         cliente.First = updateClienteDTO.First ?? cliente.First;
