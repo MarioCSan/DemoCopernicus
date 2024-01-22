@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CustomersService.Migrations
 {
     [DbContext(typeof(ClientesDbContext))]
-    [Migration("20240122124500_Initial")]
+    [Migration("20240122172307_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -28,10 +28,7 @@ namespace CustomersService.Migrations
             modelBuilder.Entity("CustomersService.Entities.Cliente", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Company")
                         .HasColumnType("nvarchar(max)");

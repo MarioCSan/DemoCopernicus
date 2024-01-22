@@ -5,7 +5,8 @@ namespace CustomersService.Entities;
 
 public class Cliente
 {
-
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.None)] 
     public int Id { get; set; }
     public String Email { get; set; }
     public String First { get; set; }

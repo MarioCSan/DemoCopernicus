@@ -26,12 +26,14 @@ public class DbInitializer
 
         List<Cliente> clientesRecuperados = await RecoveryData.RecoveryDataGithub();
 
+        var ultimoId = context.Clientes.OrderByDescending(c => c.Id).FirstOrDefault()?.Id ?? 0;
+
         foreach (var cliente in clientesRecuperados)
         {
-            // Asigna manualmente el Id del cliente desde el JSON
+            cliente.Id = ultimoId + 1;
             context.Clientes.Add(cliente);
+            ultimoId++;
         }
-
         context.AddRange(clientesRecuperados);
 
         await context.SaveChangesAsync();

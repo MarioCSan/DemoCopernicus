@@ -25,10 +25,7 @@ namespace CustomersService.Migrations
             modelBuilder.Entity("CustomersService.Entities.Cliente", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Company")
                         .HasColumnType("nvarchar(max)");
