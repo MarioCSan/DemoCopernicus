@@ -97,8 +97,6 @@ public class clienteController : ControllerBase
 
         if (cliente == null) return NotFound();
 
-        //TODO Check seller == username
-
         _context.Clientes.Remove(cliente);
 
         var result = await _context.SaveChangesAsync() > 0;

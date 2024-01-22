@@ -394,3 +394,50 @@
 2024-01-22 17:16:01.50 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
 2024-01-22 17:16:07.88 Logon       Error: 18456, Severity: 14, State: 38.
 2024-01-22 17:16:07.88 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-22 17:16:33.75 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-22 17:16:33.75 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-22 17:16:34.64 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-22 17:16:34.64 spid52      Starting up database 'Clientes'.
+2024-01-22 17:16:34.64 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-22 17:16:34.64 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-22 17:16:34.88 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-22 17:16:34.91 spid52      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-22 17:16:35.00 spid52      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
+2024-01-22 17:16:35.09 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-22 17:16:35.09 spid52      Starting up database 'Clientes'.
+2024-01-22 17:16:35.09 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-22 17:16:35.09 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-22 17:16:35.34 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-22 17:16:35.39 spid46s     Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-22 17:18:01.98 spid52      Setting database option SINGLE_USER to ON for database 'Clientes'.
+2024-01-22 17:18:12.18 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-22 17:18:12.18 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-22 17:18:13.44 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-22 17:18:13.44 spid52      Starting up database 'Clientes'.
+2024-01-22 17:18:13.44 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-22 17:18:13.44 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-22 17:18:13.67 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-22 17:18:13.70 spid52      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-22 17:18:14.05 spid52      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
+2024-01-22 17:18:14.44 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-22 17:18:14.44 spid52      Starting up database 'Clientes'.
+2024-01-22 17:18:14.44 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-22 17:18:14.44 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-22 17:18:14.68 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-22 17:18:14.86 spid7s      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-22 18:39:10.13 spid52      Setting database option SINGLE_USER to ON for database 'Clientes'.
+2024-01-22 18:39:21.90 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-22 18:39:21.90 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-22 18:39:22.77 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-22 18:39:22.77 spid52      Starting up database 'Clientes'.
+2024-01-22 18:39:22.77 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-22 18:39:22.77 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-22 18:39:23.00 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-22 18:39:23.02 spid52      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-22 18:39:23.12 spid52      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
+2024-01-22 18:39:23.20 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-22 18:39:23.21 spid52      Starting up database 'Clientes'.
+2024-01-22 18:39:23.21 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-22 18:39:23.21 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-22 18:39:23.43 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-22 18:39:23.49 spid4s      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
