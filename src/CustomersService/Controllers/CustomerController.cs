@@ -54,6 +54,9 @@ public class clienteController : ControllerBase
     {
         var cliente = _mapper.Map<Cliente>(clienteDTO);
 
+        cliente.Id = _context.GetLastId() + 1;
+        cliente.CreatedAt = clienteDTO.CreatedAt ?? DateTimeOffset.UtcNow;
+
         _context.Clientes.Add(cliente);
 
         var result = await _context.SaveChangesAsync() > 0;
@@ -77,7 +80,7 @@ public class clienteController : ControllerBase
         cliente.First = updateClienteDTO.First ?? cliente.First;
         cliente.Last = updateClienteDTO.Last ?? cliente.Last;
         cliente.Company = updateClienteDTO.Company ?? cliente.Company;
-        cliente.CreatedAt = updateClienteDTO.CreatedAt ?? cliente.CreatedAt;
+        cliente.CreatedAt = updateClienteDTO.CreatedAt ?? cliente.CreatedAt ?? DateTimeOffset.UtcNow;
         cliente.Country = updateClienteDTO.Country ?? cliente.Country;
 
         var result = await _context.SaveChangesAsync() > 0;
