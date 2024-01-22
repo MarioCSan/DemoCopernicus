@@ -1,7 +1,7 @@
-using CustomersServise.Entities;
+using CustomersService.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace CustomersServise.Data;
+namespace CustomersService.Data;
 
 public class ClientesDbContext : DbContext
 {

@@ -1,4 +1,4 @@
-namespace CustomersServise.DTOs;
+namespace CustomersService.DTOs;
 
 public class ClienteDTO
 {

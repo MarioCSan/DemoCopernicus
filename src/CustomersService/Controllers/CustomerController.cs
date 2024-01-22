@@ -1,10 +1,10 @@
 using AutoMapper;
-using CustomersServise.Data;
-using CustomersServise.DTOs;
+using CustomersService.Data;
+using CustomersService.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace CustomersServise.Controllers;
+namespace CustomersService.Controllers;
 
 [ApiController]
 [Route("api/clientes")]

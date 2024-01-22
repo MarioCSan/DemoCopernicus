@@ -1,8 +1,8 @@
 using System.ComponentModel;
-using CustomersServise.Entities;
+using CustomersService.Entities;
 using Newtonsoft.Json;
 
-namespace CustomersServise.Data;
+namespace CustomersService.Data;
 
 public class RecoveryData
 {

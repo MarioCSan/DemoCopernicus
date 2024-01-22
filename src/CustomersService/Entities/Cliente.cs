@@ -1,12 +1,11 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CustomersServise.Entities;
+namespace CustomersService.Entities;
 
 public class Cliente
 {
-    [Key]
-    public int indiceBD { get; set; }
+
     public int Id { get; set; }
     public String Email { get; set; }
     public String First { get; set; }

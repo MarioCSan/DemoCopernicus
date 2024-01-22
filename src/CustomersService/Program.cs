@@ -1,4 +1,4 @@
-using CustomersServise.Data;
+using CustomersService.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,9 +10,10 @@ builder.Services.AddDbContext<ClientesDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DockerConnection"))
       .EnableSensitiveDataLogging(true)
            .EnableDetailedErrors(true)
-           , ServiceLifetime.Transient)
-    ; // o ServiceLifetime.Scoped si es apropiado
+           , ServiceLifetime.Transient
+); 
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 
