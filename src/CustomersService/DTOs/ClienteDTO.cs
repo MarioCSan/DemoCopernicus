@@ -7,7 +7,7 @@ public class ClienteDTO
     public String First { get; set; }
     public String Last { get; set; }
     public String Company { get; set; }
-    public DateTime CreayedAt { get; set; } = DateTime.UtcNow;
+    public DateTime CreatedAt { get; set; }
     public String Country { get; set; }
 
 }

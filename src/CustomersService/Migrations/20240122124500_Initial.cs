@@ -15,18 +15,18 @@ namespace CustomersService.Migrations
                 name: "Clientes",
                 columns: table => new
                 {
-                    indiceBD = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Id = table.Column<int>(type: "int", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     First = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Last = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CreatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
+                    Company = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
                     Country = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Clientes", x => x.indiceBD);
+                    table.PrimaryKey("PK_Clientes", x => x.Id);
                 });
         }
 

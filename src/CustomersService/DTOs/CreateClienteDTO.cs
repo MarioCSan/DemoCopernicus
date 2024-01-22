@@ -20,8 +20,8 @@ public class CreateClienteDTO
     public String Company { get; set; }
 
     [Required]
-    public DateTime CreayedAt { get; set; } = DateTime.UtcNow;
-
+    public DateTimeOffset? CreatedAt { get; set; }
+    
     [Required]
     public String Country { get; set; }
 

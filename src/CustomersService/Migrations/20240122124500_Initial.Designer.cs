@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CustomersService.Migrations
 {
     [DbContext(typeof(ClientesDbContext))]
-    [Migration("20240121225902_Initial")]
+    [Migration("20240122124500_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -27,16 +27,19 @@ namespace CustomersService.Migrations
 
             modelBuilder.Entity("CustomersService.Entities.Cliente", b =>
                 {
-                    b.Property<int>("indiceBD")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("indiceBD"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Company")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Country")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("CreatedAt")
+                    b.Property<DateTimeOffset?>("CreatedAt")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("Email")
@@ -45,13 +48,10 @@ namespace CustomersService.Migrations
                     b.Property<string>("First")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
-
                     b.Property<string>("Last")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("indiceBD");
+                    b.HasKey("Id");
 
                     b.ToTable("Clientes");
                 });
