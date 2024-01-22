@@ -28,12 +28,7 @@ public class DbInitializer
 
         var ultimoId = context.Clientes.OrderByDescending(c => c.Id).FirstOrDefault()?.Id ?? 0;
 
-        foreach (var cliente in clientesRecuperados)
-        {
-            cliente.Id = ultimoId + 1;
-            context.Clientes.Add(cliente);
-            ultimoId++;
-        }
+        
         context.AddRange(clientesRecuperados);
 
         await context.SaveChangesAsync();
