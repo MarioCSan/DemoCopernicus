@@ -11,12 +11,24 @@ builder.Services.AddDbContext<ClientesDbContext>(options =>
       .EnableSensitiveDataLogging(true)
            .EnableDetailedErrors(true)
            , ServiceLifetime.Transient
-); 
+);
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReact", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyHeader()
+               .AllowAnyMethod();
+    });
+});
+
+
 var app = builder.Build();
 
+app.UseCors("AllowReact");
 
 app.UseHttpsRedirection();
 
