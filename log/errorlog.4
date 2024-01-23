@@ -1,219 +1,322 @@
-2024-01-21 16:41:16.77 Server      Microsoft SQL Server 2022 (RTM-CU11) (KB5032679) - 16.0.4105.2 (X64) 
+2024-01-21 17:54:33.12 Server      Microsoft SQL Server 2022 (RTM-CU11) (KB5032679) - 16.0.4105.2 (X64) 
 	Nov 14 2023 18:33:19 
 	Copyright (C) 2022 Microsoft Corporation
 	Developer Edition (64-bit) on Linux (Ubuntu 22.04.3 LTS) <X64>
-2024-01-21 16:41:16.77 Server      UTC adjustment: 0:00
-2024-01-21 16:41:16.77 Server      (c) Microsoft Corporation.
-2024-01-21 16:41:16.77 Server      All rights reserved.
-2024-01-21 16:41:16.77 Server      Server process ID is 500.
-2024-01-21 16:41:16.78 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
-2024-01-21 16:41:16.78 Server      Registry startup parameters: 
+2024-01-21 17:54:33.12 Server      UTC adjustment: 0:00
+2024-01-21 17:54:33.12 Server      (c) Microsoft Corporation.
+2024-01-21 17:54:33.12 Server      All rights reserved.
+2024-01-21 17:54:33.12 Server      Server process ID is 496.
+2024-01-21 17:54:33.12 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2024-01-21 17:54:33.12 Server      Registry startup parameters: 
 	 -d /var/opt/mssql/data/master.mdf
 	 -l /var/opt/mssql/data/mastlog.ldf
 	 -e /var/opt/mssql/log/errorlog
-2024-01-21 16:41:16.78 Server      SQL Server detected 1 sockets with 6 cores per socket and 12 logical processors per socket, 12 total logical processors; using 12 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
-2024-01-21 16:41:16.78 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
-2024-01-21 16:41:16.78 Server      Detected 10159 MB of RAM. This is an informational message; no user action is required.
-2024-01-21 16:41:16.78 Server      Using conventional memory in the memory manager.
-2024-01-21 16:41:16.78 Server      Detected pause instruction latency: 35 cycles.
-2024-01-21 16:41:16.79 Server      SQL Server detected the following NUMA node configuration (NUMA Node number 0, Processor Group number 0, CPU Mask 0x0000000000000fff).
-2024-01-21 16:41:16.79 Server      Page exclusion bitmap is enabled.
-2024-01-21 16:41:16.83 Server      Buffer pool extension is not supported on Linux platform.
-2024-01-21 16:41:16.83 Server      Buffer Pool: Allocating 2097152 bytes for 1522223 hashPages.
-2024-01-21 16:41:16.91 Server      Buffer pool extension is already disabled. No action is necessary.
-2024-01-21 16:41:17.17 Server      Installing Client TLS certificates to the store.
-2024-01-21 16:41:17.17 Server      Error searching first file in /var/opt/mssql/security/ca-certificates: 3(The system cannot find the path specified.)
-2024-01-21 16:41:17.17 Server      CPU vectorization level(s) detected:  SSE SSE2 SSE3 SSSE3 SSE41 SSE42 AVX AVX2 POPCNT BMI1 BMI2
-2024-01-21 16:41:17.20 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
-2024-01-21 16:41:17.21 Server      Query Store settings initialized with enabled = 1, 
-2024-01-21 16:41:17.22 Server      The maximum number of dedicated administrator connections for this instance is '1'
-2024-01-21 16:41:17.22 Server      Node configuration: node 0: CPU mask: 0x0000000000000fff:0 Active CPU mask: 0x0000000000000fff:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
-2024-01-21 16:41:17.23 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
-2024-01-21 16:41:17.25 Server      In-Memory OLTP initialized on standard machine.
-2024-01-21 16:41:17.30 Server      [INFO] Created Extended Events session 'hkenginexesession'
-2024-01-21 16:41:17.30 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
-2024-01-21 16:41:17.31 Server      Total Log Writer threads: 2. This is an informational message; no user action is required.
-2024-01-21 16:41:17.31 Server      clwb is selected for pmem flush operation.
-2024-01-21 16:41:17.32 Server      Software Usage Metrics is disabled.
-2024-01-21 16:41:17.32 spid34s     [1]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-21 16:41:17.33 spid34s     Starting up database 'master'.
-2024-01-21 16:41:17.37 Server      CLR version v4.0.30319 loaded.
-2024-01-21 16:41:17.55 Server      External governance manager initialized
-2024-01-21 16:41:17.57 Server      Common language runtime (CLR) functionality initialized.
-2024-01-21 16:41:17.62 spid34s     [32762]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-21 16:41:17.63 spid37s     [32767]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-21 16:41:17.63 spid34s     Starting up database 'model_replicatedmaster'.
-2024-01-21 16:41:17.63 spid37s     Starting up database 'mssqlsystemresource'.
-2024-01-21 16:41:17.63 spid37s     The resource database build version is 16.00.4105. This is an informational message only. No user action is required.
-2024-01-21 16:41:17.64 spid37s     [3]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-21 16:41:17.65 spid37s     Starting up database 'model'.
-2024-01-21 16:41:17.88 spid34s     The tail of the log for database model_replicatedmaster is being rewritten to match the new sector size of 4096 bytes.  2560 bytes at offset 99840 in file /var/opt/mssql/data/model_replicatedmaster.ldf will be written.
-2024-01-21 16:41:17.90 spid34s     Converting database 'model_replicatedmaster' from version 927 to the current version 957.
-2024-01-21 16:41:17.90 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 927 to version 928.
-2024-01-21 16:41:17.92 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 928 to version 929.
-2024-01-21 16:41:17.96 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 929 to version 930.
-2024-01-21 16:41:18.15 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 930 to version 931.
-2024-01-21 16:41:18.17 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 931 to version 932.
-2024-01-21 16:41:18.19 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 932 to version 933.
-2024-01-21 16:41:18.21 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 933 to version 934.
-2024-01-21 16:41:18.22 spid44s     A self-generated certificate was successfully loaded for encryption.
-2024-01-21 16:41:18.22 spid44s     Server is listening on [ 'any' <ipv6> 1433] accept sockets 1.
-2024-01-21 16:41:18.22 spid44s     Server is listening on [ 'any' <ipv4> 1433] accept sockets 1.
-2024-01-21 16:41:18.22 Server      Server is listening on [ ::1 <ipv6> 1434] accept sockets 1.
-2024-01-21 16:41:18.22 Server      Server is listening on [ 127.0.0.1 <ipv4> 1434] accept sockets 1.
-2024-01-21 16:41:18.23 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 934 to version 935.
-2024-01-21 16:41:18.23 Server      Dedicated admin connection support was established for listening locally on port 1434.
-2024-01-21 16:41:18.23 spid44s     Server is listening on [ ::1 <ipv6> 1431] accept sockets 1.
-2024-01-21 16:41:18.23 spid44s     Server is listening on [ 127.0.0.1 <ipv4> 1431] accept sockets 1.
-2024-01-21 16:41:18.23 spid44s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
-2024-01-21 16:41:18.24 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 935 to version 936.
-2024-01-21 16:41:18.26 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 936 to version 937.
-2024-01-21 16:41:18.28 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 937 to version 938.
-2024-01-21 16:41:18.30 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 938 to version 939.
-2024-01-21 16:41:18.32 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 939 to version 940.
-2024-01-21 16:41:18.34 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 940 to version 941.
-2024-01-21 16:41:18.36 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 941 to version 942.
-2024-01-21 16:41:18.38 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 942 to version 943.
-2024-01-21 16:41:18.62 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 943 to version 944.
-2024-01-21 16:41:18.64 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 944 to version 945.
-2024-01-21 16:41:18.66 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 945 to version 946.
-2024-01-21 16:41:18.68 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 946 to version 947.
-2024-01-21 16:41:18.70 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 947 to version 948.
-2024-01-21 16:41:18.72 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 948 to version 949.
-2024-01-21 16:41:18.73 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 949 to version 950.
-2024-01-21 16:41:18.75 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 950 to version 951.
-2024-01-21 16:41:18.78 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 951 to version 952.
-2024-01-21 16:41:18.79 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 952 to version 953.
-2024-01-21 16:41:18.81 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 953 to version 954.
-2024-01-21 16:41:18.83 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 954 to version 955.
-2024-01-21 16:41:18.85 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 955 to version 956.
-2024-01-21 16:41:18.98 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 956 to version 957.
-2024-01-21 16:41:19.09 spid34s     [32761]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-21 16:41:19.09 spid34s     Starting up database 'model_msdb'.
-2024-01-21 16:41:19.34 spid34s     Converting database 'model_msdb' from version 927 to the current version 957.
-2024-01-21 16:41:19.35 spid34s     Database 'model_msdb' running the upgrade step from version 927 to version 928.
-2024-01-21 16:41:19.39 spid34s     Database 'model_msdb' running the upgrade step from version 928 to version 929.
-2024-01-21 16:41:19.42 spid34s     Database 'model_msdb' running the upgrade step from version 929 to version 930.
-2024-01-21 16:41:19.44 spid34s     Database 'model_msdb' running the upgrade step from version 930 to version 931.
-2024-01-21 16:41:19.46 spid34s     Database 'model_msdb' running the upgrade step from version 931 to version 932.
-2024-01-21 16:41:19.48 spid34s     Database 'model_msdb' running the upgrade step from version 932 to version 933.
-2024-01-21 16:41:19.61 spid34s     Database 'model_msdb' running the upgrade step from version 933 to version 934.
-2024-01-21 16:41:19.63 spid34s     Database 'model_msdb' running the upgrade step from version 934 to version 935.
-2024-01-21 16:41:19.65 spid34s     Database 'model_msdb' running the upgrade step from version 935 to version 936.
-2024-01-21 16:41:19.66 spid34s     Database 'model_msdb' running the upgrade step from version 936 to version 937.
-2024-01-21 16:41:19.68 spid34s     Database 'model_msdb' running the upgrade step from version 937 to version 938.
-2024-01-21 16:41:19.70 spid34s     Database 'model_msdb' running the upgrade step from version 938 to version 939.
-2024-01-21 16:41:19.72 spid34s     Database 'model_msdb' running the upgrade step from version 939 to version 940.
-2024-01-21 16:41:19.74 spid34s     Database 'model_msdb' running the upgrade step from version 940 to version 941.
-2024-01-21 16:41:19.75 spid34s     Database 'model_msdb' running the upgrade step from version 941 to version 942.
-2024-01-21 16:41:19.77 spid34s     Database 'model_msdb' running the upgrade step from version 942 to version 943.
-2024-01-21 16:41:19.92 spid34s     Database 'model_msdb' running the upgrade step from version 943 to version 944.
-2024-01-21 16:41:19.94 spid34s     Database 'model_msdb' running the upgrade step from version 944 to version 945.
-2024-01-21 16:41:20.07 spid34s     Database 'model_msdb' running the upgrade step from version 945 to version 946.
-2024-01-21 16:41:20.09 spid34s     Database 'model_msdb' running the upgrade step from version 946 to version 947.
-2024-01-21 16:41:20.11 spid34s     Database 'model_msdb' running the upgrade step from version 947 to version 948.
-2024-01-21 16:41:20.13 spid34s     Database 'model_msdb' running the upgrade step from version 948 to version 949.
-2024-01-21 16:41:20.15 spid34s     Database 'model_msdb' running the upgrade step from version 949 to version 950.
-2024-01-21 16:41:20.17 spid34s     Database 'model_msdb' running the upgrade step from version 950 to version 951.
-2024-01-21 16:41:20.19 spid34s     Database 'model_msdb' running the upgrade step from version 951 to version 952.
-2024-01-21 16:41:20.21 spid34s     Database 'model_msdb' running the upgrade step from version 952 to version 953.
-2024-01-21 16:41:20.23 spid34s     Database 'model_msdb' running the upgrade step from version 953 to version 954.
-2024-01-21 16:41:20.25 spid34s     Database 'model_msdb' running the upgrade step from version 954 to version 955.
-2024-01-21 16:41:20.27 spid34s     Database 'model_msdb' running the upgrade step from version 955 to version 956.
-2024-01-21 16:41:20.30 spid34s     Database 'model_msdb' running the upgrade step from version 956 to version 957.
-2024-01-21 16:41:20.39 spid34s     Resource governor reconfiguration succeeded.
-2024-01-21 16:41:20.39 spid46s     Attribute synchronization initialized
-2024-01-21 16:41:20.39 spid34s     SQL Server Audit is starting the audits. This is an informational message. No user action is required.
-2024-01-21 16:41:20.39 spid46s     Attribute synchronization manager initialized
-2024-01-21 16:41:20.39 spid34s     SQL Server Audit has started the audits. This is an informational message. No user action is required.
-2024-01-21 16:41:20.39 spid34s     XE session 'system_health' started.
-2024-01-21 16:41:20.46 spid34s     SQL Trace ID 1 was started by login "sa".
-2024-01-21 16:41:20.48 spid34s     Server name is 'mssql-db'. This is an informational message only. No user action is required.
-2024-01-21 16:41:20.49 spid37s     Clearing tempdb database.
-2024-01-21 16:41:20.49 spid59s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
-2024-01-21 16:41:20.49 spid62s     [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-21 16:41:20.49 spid63s     [4]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-21 16:41:20.50 spid59s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
-2024-01-21 16:41:20.50 spid62s     Starting up database 'Clientes'.
-2024-01-21 16:41:20.50 spid63s     Starting up database 'msdb'.
-2024-01-21 16:41:20.50 spid62s     RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2024-01-21 16:41:20.50 spid62s     RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2024-01-21 16:41:20.78 spid62s     Parallel redo is started for database 'Clientes' with worker pool size [6].
-2024-01-21 16:41:20.81 spid62s     Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
-2024-01-21 16:41:21.15 spid37s     [2]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-21 16:41:21.15 spid37s     Starting up database 'tempdb'.
-2024-01-21 16:41:22.32 spid35s     Using 'dbghelp.dll' version '4.0.5'
-2024-01-21 16:41:23.43 spid37s     The tempdb database has 8 data file(s).
-2024-01-21 16:41:23.44 spid59s     The Service Broker endpoint is in disabled or stopped state.
-2024-01-21 16:41:23.45 spid59s     The Database Mirroring endpoint is in disabled or stopped state.
-2024-01-21 16:41:23.45 spid59s     Service Broker manager has started.
-2024-01-21 16:41:23.45 spid34s     Recovery is complete. This is an informational message only. No user action is required.
-2024-01-21 16:56:01.42 Logon       Error: 18456, Severity: 14, State: 5.
-2024-01-21 16:56:01.42 Logon       Login failed for user 'Docker'. Reason: Could not find a login matching the name provided. [CLIENT: 172.25.0.1]
-2024-01-21 16:56:01.51 Logon       Error: 18456, Severity: 14, State: 5.
-2024-01-21 16:56:01.51 Logon       Login failed for user 'Docker'. Reason: Could not find a login matching the name provided. [CLIENT: 172.25.0.1]
-2024-01-21 16:56:23.39 Logon       Error: 18456, Severity: 14, State: 5.
-2024-01-21 16:56:23.39 Logon       Login failed for user 'Docker'. Reason: Could not find a login matching the name provided. [CLIENT: 172.25.0.1]
-2024-01-21 16:56:23.48 Logon       Error: 18456, Severity: 14, State: 5.
-2024-01-21 16:56:23.48 Logon       Login failed for user 'Docker'. Reason: Could not find a login matching the name provided. [CLIENT: 172.25.0.1]
-2024-01-21 16:57:22.07 spid51      Attempting to load library 'xplog70.dll' into memory. This is an informational message only. No user action is required.
-2024-01-21 16:57:22.09 spid51      Using 'xplog70.dll' version '2022.160.4105' to execute extended stored procedure 'xp_msver'. This is an informational message only; no user action is required.
-2024-01-21 16:57:22.14 spid53      Attempting to load library 'xpstar.dll' into memory. This is an informational message only. No user action is required.
-2024-01-21 16:57:22.15 spid53      Using 'xpstar.dll' version '2022.160.4105' to execute extended stored procedure 'xp_instance_regread'. This is an informational message only; no user action is required.
-2024-01-21 16:58:30.04 Logon       Error: 18456, Severity: 14, State: 38.
-2024-01-21 16:58:30.04 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.25.0.1]
-2024-01-21 16:58:30.87 spid66      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-21 16:58:30.88 spid66      Starting up database 'Clientes'.
-2024-01-21 16:58:30.88 spid66      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2024-01-21 16:58:30.88 spid66      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2024-01-21 16:58:31.11 spid66      Parallel redo is started for database 'Clientes' with worker pool size [6].
-2024-01-21 16:58:31.13 spid66      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
-2024-01-21 16:58:31.23 spid66      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
-2024-01-21 16:58:31.31 spid66      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-21 16:58:31.31 spid66      Starting up database 'Clientes'.
-2024-01-21 16:58:31.31 spid66      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2024-01-21 16:58:31.31 spid66      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2024-01-21 16:58:31.54 spid66      Parallel redo is started for database 'Clientes' with worker pool size [6].
-2024-01-21 16:58:31.60 spid21s     Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
-2024-01-21 17:29:33.19 spid51      Setting database option SINGLE_USER to ON for database 'Clientes'.
-2024-01-21 17:29:47.53 Logon       Error: 18456, Severity: 14, State: 38.
-2024-01-21 17:29:47.53 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.25.0.1]
-2024-01-21 17:30:21.87 Logon       Error: 18456, Severity: 14, State: 38.
-2024-01-21 17:30:21.87 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.25.0.1]
-2024-01-21 17:30:22.74 spid51      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-21 17:30:22.75 spid51      Starting up database 'Clientes'.
-2024-01-21 17:30:22.75 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2024-01-21 17:30:22.75 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2024-01-21 17:30:22.97 spid51      Parallel redo is started for database 'Clientes' with worker pool size [6].
-2024-01-21 17:30:22.99 spid51      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
-2024-01-21 17:30:23.08 spid51      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
-2024-01-21 17:30:23.17 spid51      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-21 17:30:23.17 spid51      Starting up database 'Clientes'.
-2024-01-21 17:30:23.17 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2024-01-21 17:30:23.17 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2024-01-21 17:30:23.38 spid51      Parallel redo is started for database 'Clientes' with worker pool size [6].
-2024-01-21 17:30:23.43 spid7s      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
-2024-01-21 17:30:38.89 spid51      Setting database option SINGLE_USER to ON for database 'Clientes'.
-2024-01-21 17:30:46.64 Logon       Error: 18456, Severity: 14, State: 38.
-2024-01-21 17:30:46.64 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.25.0.1]
-2024-01-21 17:31:14.48 Logon       Error: 18456, Severity: 14, State: 38.
-2024-01-21 17:31:14.48 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.25.0.1]
-2024-01-21 17:31:15.35 spid51      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-21 17:31:15.35 spid51      Starting up database 'Clientes'.
-2024-01-21 17:31:15.35 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2024-01-21 17:31:15.35 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2024-01-21 17:31:15.58 spid51      Parallel redo is started for database 'Clientes' with worker pool size [6].
-2024-01-21 17:31:15.60 spid51      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
-2024-01-21 17:31:15.69 spid51      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
-2024-01-21 17:31:15.77 spid51      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-21 17:31:15.77 spid51      Starting up database 'Clientes'.
-2024-01-21 17:31:15.78 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2024-01-21 17:31:15.78 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2024-01-21 17:31:16.01 spid51      Parallel redo is started for database 'Clientes' with worker pool size [6].
-2024-01-21 17:31:16.06 spid1s      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
-2024-01-21 17:41:20.66 spid4s      [DevOpsSnapshotTelemetryTask] Evaluating the background task.
-2024-01-21 17:54:26.76 spid34s     Always On: The availability replica manager is going offline because SQL Server is shutting down. This is an informational message only. No user action is required.
-2024-01-21 17:54:26.76 spid34s     SQL Server is terminating in response to a 'stop' request from Service Control Manager. This is an informational message only. No user action is required.
-2024-01-21 17:54:26.76 spid34s     .NET Framework runtime has been stopped.
-2024-01-21 17:54:26.86 spid59s     Service Broker manager has shut down.
-2024-01-21 17:54:27.03 spid34s     SQL Trace was stopped due to server shutdown. Trace ID = '1'. This is an informational message only; no user action is required.
+2024-01-21 17:54:33.13 Server      SQL Server detected 1 sockets with 6 cores per socket and 12 logical processors per socket, 12 total logical processors; using 12 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
+2024-01-21 17:54:33.13 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
+2024-01-21 17:54:33.13 Server      Detected 10159 MB of RAM. This is an informational message; no user action is required.
+2024-01-21 17:54:33.13 Server      Using conventional memory in the memory manager.
+2024-01-21 17:54:33.13 Server      Detected pause instruction latency: 36 cycles.
+2024-01-21 17:54:33.13 Server      SQL Server detected the following NUMA node configuration (NUMA Node number 0, Processor Group number 0, CPU Mask 0x0000000000000fff).
+2024-01-21 17:54:33.14 Server      Page exclusion bitmap is enabled.
+2024-01-21 17:54:33.18 Server      Buffer pool extension is not supported on Linux platform.
+2024-01-21 17:54:33.18 Server      Buffer Pool: Allocating 2097152 bytes for 1522262 hashPages.
+2024-01-21 17:54:33.27 Server      Buffer pool extension is already disabled. No action is necessary.
+2024-01-21 17:54:33.53 Server      Installing Client TLS certificates to the store.
+2024-01-21 17:54:33.53 Server      Error searching first file in /var/opt/mssql/security/ca-certificates: 3(The system cannot find the path specified.)
+2024-01-21 17:54:33.53 Server      CPU vectorization level(s) detected:  SSE SSE2 SSE3 SSSE3 SSE41 SSE42 AVX AVX2 POPCNT BMI1 BMI2
+2024-01-21 17:54:33.56 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
+2024-01-21 17:54:33.57 Server      Query Store settings initialized with enabled = 1, 
+2024-01-21 17:54:33.58 Server      The maximum number of dedicated administrator connections for this instance is '1'
+2024-01-21 17:54:33.58 Server      Node configuration: node 0: CPU mask: 0x0000000000000fff:0 Active CPU mask: 0x0000000000000fff:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
+2024-01-21 17:54:33.60 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
+2024-01-21 17:54:33.61 Server      In-Memory OLTP initialized on standard machine.
+2024-01-21 17:54:33.68 Server      [INFO] Created Extended Events session 'hkenginexesession'
+2024-01-21 17:54:33.68 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
+2024-01-21 17:54:33.69 Server      Total Log Writer threads: 2. This is an informational message; no user action is required.
+2024-01-21 17:54:33.69 Server      CLR version v4.0.30319 loaded.
+2024-01-21 17:54:33.70 Server      clwb is selected for pmem flush operation.
+2024-01-21 17:54:33.70 Server      Software Usage Metrics is disabled.
+2024-01-21 17:54:33.71 spid34s     [1]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 17:54:33.71 spid34s     Starting up database 'master'.
+2024-01-21 17:54:33.90 Server      Common language runtime (CLR) functionality initialized.
+2024-01-21 17:54:33.93 Server      External governance manager initialized
+2024-01-21 17:54:34.04 spid34s     [32762]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 17:54:34.04 spid34s     Starting up database 'model_replicatedmaster'.
+2024-01-21 17:54:34.04 spid37s     [32767]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 17:54:34.05 spid37s     Starting up database 'mssqlsystemresource'.
+2024-01-21 17:54:34.05 spid37s     The resource database build version is 16.00.4105. This is an informational message only. No user action is required.
+2024-01-21 17:54:34.07 spid37s     [3]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 17:54:34.07 spid37s     Starting up database 'model'.
+2024-01-21 17:54:34.34 spid34s     The tail of the log for database model_replicatedmaster is being rewritten to match the new sector size of 4096 bytes.  2560 bytes at offset 99840 in file /var/opt/mssql/data/model_replicatedmaster.ldf will be written.
+2024-01-21 17:54:34.37 spid34s     Converting database 'model_replicatedmaster' from version 927 to the current version 957.
+2024-01-21 17:54:34.37 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 927 to version 928.
+2024-01-21 17:54:34.39 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 928 to version 929.
+2024-01-21 17:54:34.39 spid44s     A self-generated certificate was successfully loaded for encryption.
+2024-01-21 17:54:34.40 spid44s     Server is listening on [ 'any' <ipv6> 1433] accept sockets 1.
+2024-01-21 17:54:34.40 spid44s     Server is listening on [ 'any' <ipv4> 1433] accept sockets 1.
+2024-01-21 17:54:34.40 Server      Server is listening on [ ::1 <ipv6> 1434] accept sockets 1.
+2024-01-21 17:54:34.40 Server      Server is listening on [ 127.0.0.1 <ipv4> 1434] accept sockets 1.
+2024-01-21 17:54:34.40 Server      Dedicated admin connection support was established for listening locally on port 1434.
+2024-01-21 17:54:34.41 spid44s     Server is listening on [ ::1 <ipv6> 1431] accept sockets 1.
+2024-01-21 17:54:34.41 spid44s     Server is listening on [ 127.0.0.1 <ipv4> 1431] accept sockets 1.
+2024-01-21 17:54:34.41 spid44s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
+2024-01-21 17:54:34.43 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 929 to version 930.
+2024-01-21 17:54:34.59 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 930 to version 931.
+2024-01-21 17:54:34.61 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 931 to version 932.
+2024-01-21 17:54:34.63 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 932 to version 933.
+2024-01-21 17:54:34.65 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 933 to version 934.
+2024-01-21 17:54:34.67 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 934 to version 935.
+2024-01-21 17:54:34.69 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 935 to version 936.
+2024-01-21 17:54:34.70 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 936 to version 937.
+2024-01-21 17:54:34.72 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 937 to version 938.
+2024-01-21 17:54:34.74 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 938 to version 939.
+2024-01-21 17:54:34.76 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 939 to version 940.
+2024-01-21 17:54:34.78 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 940 to version 941.
+2024-01-21 17:54:34.80 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 941 to version 942.
+2024-01-21 17:54:34.82 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 942 to version 943.
+2024-01-21 17:54:35.08 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 943 to version 944.
+2024-01-21 17:54:35.10 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 944 to version 945.
+2024-01-21 17:54:35.12 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 945 to version 946.
+2024-01-21 17:54:35.14 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 946 to version 947.
+2024-01-21 17:54:35.16 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 947 to version 948.
+2024-01-21 17:54:35.18 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 948 to version 949.
+2024-01-21 17:54:35.20 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 949 to version 950.
+2024-01-21 17:54:35.22 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 950 to version 951.
+2024-01-21 17:54:35.24 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 951 to version 952.
+2024-01-21 17:54:35.26 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 952 to version 953.
+2024-01-21 17:54:35.28 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 953 to version 954.
+2024-01-21 17:54:35.30 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 954 to version 955.
+2024-01-21 17:54:35.32 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 955 to version 956.
+2024-01-21 17:54:35.44 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 956 to version 957.
+2024-01-21 17:54:35.55 spid34s     [32761]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 17:54:35.55 spid34s     Starting up database 'model_msdb'.
+2024-01-21 17:54:35.85 spid34s     Converting database 'model_msdb' from version 927 to the current version 957.
+2024-01-21 17:54:35.85 spid34s     Database 'model_msdb' running the upgrade step from version 927 to version 928.
+2024-01-21 17:54:35.88 spid34s     Database 'model_msdb' running the upgrade step from version 928 to version 929.
+2024-01-21 17:54:35.91 spid34s     Database 'model_msdb' running the upgrade step from version 929 to version 930.
+2024-01-21 17:54:35.93 spid34s     Database 'model_msdb' running the upgrade step from version 930 to version 931.
+2024-01-21 17:54:35.95 spid34s     Database 'model_msdb' running the upgrade step from version 931 to version 932.
+2024-01-21 17:54:35.97 spid34s     Database 'model_msdb' running the upgrade step from version 932 to version 933.
+2024-01-21 17:54:36.11 spid34s     Database 'model_msdb' running the upgrade step from version 933 to version 934.
+2024-01-21 17:54:36.13 spid34s     Database 'model_msdb' running the upgrade step from version 934 to version 935.
+2024-01-21 17:54:36.15 spid34s     Database 'model_msdb' running the upgrade step from version 935 to version 936.
+2024-01-21 17:54:36.17 spid34s     Database 'model_msdb' running the upgrade step from version 936 to version 937.
+2024-01-21 17:54:36.19 spid34s     Database 'model_msdb' running the upgrade step from version 937 to version 938.
+2024-01-21 17:54:36.20 spid34s     Database 'model_msdb' running the upgrade step from version 938 to version 939.
+2024-01-21 17:54:36.22 spid34s     Database 'model_msdb' running the upgrade step from version 939 to version 940.
+2024-01-21 17:54:36.24 spid34s     Database 'model_msdb' running the upgrade step from version 940 to version 941.
+2024-01-21 17:54:36.26 spid34s     Database 'model_msdb' running the upgrade step from version 941 to version 942.
+2024-01-21 17:54:36.28 spid34s     Database 'model_msdb' running the upgrade step from version 942 to version 943.
+2024-01-21 17:54:36.41 spid34s     Database 'model_msdb' running the upgrade step from version 943 to version 944.
+2024-01-21 17:54:36.43 spid34s     Database 'model_msdb' running the upgrade step from version 944 to version 945.
+2024-01-21 17:54:36.59 spid34s     Database 'model_msdb' running the upgrade step from version 945 to version 946.
+2024-01-21 17:54:36.61 spid34s     Database 'model_msdb' running the upgrade step from version 946 to version 947.
+2024-01-21 17:54:36.63 spid34s     Database 'model_msdb' running the upgrade step from version 947 to version 948.
+2024-01-21 17:54:36.65 spid34s     Database 'model_msdb' running the upgrade step from version 948 to version 949.
+2024-01-21 17:54:36.67 spid34s     Database 'model_msdb' running the upgrade step from version 949 to version 950.
+2024-01-21 17:54:36.69 spid34s     Database 'model_msdb' running the upgrade step from version 950 to version 951.
+2024-01-21 17:54:36.71 spid34s     Database 'model_msdb' running the upgrade step from version 951 to version 952.
+2024-01-21 17:54:36.73 spid34s     Database 'model_msdb' running the upgrade step from version 952 to version 953.
+2024-01-21 17:54:36.76 spid34s     Database 'model_msdb' running the upgrade step from version 953 to version 954.
+2024-01-21 17:54:36.78 spid34s     Database 'model_msdb' running the upgrade step from version 954 to version 955.
+2024-01-21 17:54:36.79 spid34s     Database 'model_msdb' running the upgrade step from version 955 to version 956.
+2024-01-21 17:54:36.82 spid34s     Database 'model_msdb' running the upgrade step from version 956 to version 957.
+2024-01-21 17:54:36.93 spid34s     Resource governor reconfiguration succeeded.
+2024-01-21 17:54:36.93 spid46s     Attribute synchronization initialized
+2024-01-21 17:54:36.93 spid34s     SQL Server Audit is starting the audits. This is an informational message. No user action is required.
+2024-01-21 17:54:36.93 spid46s     Attribute synchronization manager initialized
+2024-01-21 17:54:36.93 spid34s     SQL Server Audit has started the audits. This is an informational message. No user action is required.
+2024-01-21 17:54:36.93 spid34s     XE session 'system_health' started.
+2024-01-21 17:54:37.01 spid34s     SQL Trace ID 1 was started by login "sa".
+2024-01-21 17:54:37.03 spid34s     Server name is 'mssql-db'. This is an informational message only. No user action is required.
+2024-01-21 17:54:37.04 spid37s     Clearing tempdb database.
+2024-01-21 17:54:37.04 spid59s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
+2024-01-21 17:54:37.04 spid64s     [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 17:54:37.04 spid62s     [4]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 17:54:37.04 spid59s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
+2024-01-21 17:54:37.04 spid64s     Starting up database 'Clientes'.
+2024-01-21 17:54:37.05 spid62s     Starting up database 'msdb'.
+2024-01-21 17:54:37.05 spid64s     RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 17:54:37.05 spid64s     RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 17:54:37.34 spid64s     Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 17:54:37.39 spid64s     Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 17:54:37.75 spid37s     [2]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 17:54:37.75 spid37s     Starting up database 'tempdb'.
+2024-01-21 17:54:38.71 spid35s     Using 'dbghelp.dll' version '4.0.5'
+2024-01-21 17:54:40.07 spid37s     The tempdb database has 8 data file(s).
+2024-01-21 17:54:40.08 spid59s     The Service Broker endpoint is in disabled or stopped state.
+2024-01-21 17:54:40.08 spid59s     The Database Mirroring endpoint is in disabled or stopped state.
+2024-01-21 17:54:40.09 spid34s     Recovery is complete. This is an informational message only. No user action is required.
+2024-01-21 17:54:40.09 spid59s     Service Broker manager has started.
+2024-01-21 17:56:37.57 spid68      Setting database option SINGLE_USER to ON for database 'Clientes'.
+2024-01-21 17:57:01.56 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-21 17:57:01.56 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-21 17:57:04.16 spid68      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 17:57:04.16 spid68      Starting up database 'Clientes'.
+2024-01-21 17:57:04.16 spid68      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 17:57:04.16 spid68      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 17:57:04.38 spid68      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 17:57:04.51 spid68      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 17:57:04.87 spid68      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
+2024-01-21 17:57:05.28 spid68      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 17:57:05.28 spid68      Starting up database 'Clientes'.
+2024-01-21 17:57:05.28 spid68      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 17:57:05.28 spid68      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 17:57:05.52 spid68      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 17:57:05.77 spid67s     Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 18:01:26.83 spid68      Setting database option SINGLE_USER to ON for database 'Clientes'.
+2024-01-21 18:01:53.68 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-21 18:01:53.68 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-21 18:01:54.52 spid68      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 18:01:54.52 spid68      Starting up database 'Clientes'.
+2024-01-21 18:01:54.52 spid68      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 18:01:54.52 spid68      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 18:01:54.70 spid68      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 18:01:54.71 spid68      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 18:01:54.80 spid68      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
+2024-01-21 18:01:54.89 spid68      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 18:01:54.89 spid68      Starting up database 'Clientes'.
+2024-01-21 18:01:54.89 spid68      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 18:01:54.89 spid68      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 18:01:55.12 spid68      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 18:01:55.17 spid67s     Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 18:04:31.17 spid51      Setting database option SINGLE_USER to ON for database 'Clientes'.
+2024-01-21 18:04:36.41 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-21 18:04:36.41 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-21 18:04:37.32 spid51      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 18:04:37.32 spid51      Starting up database 'Clientes'.
+2024-01-21 18:04:37.32 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 18:04:37.32 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 18:04:37.54 spid51      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 18:04:37.56 spid51      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 18:04:37.65 spid51      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
+2024-01-21 18:04:37.74 spid51      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 18:04:37.74 spid51      Starting up database 'Clientes'.
+2024-01-21 18:04:37.74 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 18:04:37.74 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 18:04:37.98 spid51      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 18:04:38.03 spid3s      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 21:22:55.16 spid19s     [DevOpsSnapshotTelemetryTask] Evaluating the background task.
+2024-01-21 22:03:01.86 spid52      Attempting to load library 'xplog70.dll' into memory. This is an informational message only. No user action is required.
+2024-01-21 22:03:01.88 spid52      Using 'xplog70.dll' version '2022.160.4105' to execute extended stored procedure 'xp_msver'. This is an informational message only; no user action is required.
+2024-01-21 22:03:53.95 spid54      Setting database option SINGLE_USER to ON for database 'Clientes'.
+2024-01-21 22:06:24.32 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-21 22:06:24.32 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-21 22:06:25.15 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 22:06:25.15 spid52      Starting up database 'Clientes'.
+2024-01-21 22:06:25.15 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 22:06:25.15 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 22:06:25.38 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 22:06:25.40 spid52      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 22:06:25.49 spid52      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
+2024-01-21 22:06:25.57 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 22:06:25.57 spid52      Starting up database 'Clientes'.
+2024-01-21 22:06:25.57 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 22:06:25.58 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 22:06:25.79 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 22:06:25.84 spid5s      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 22:07:11.90 spid54      Setting database option SINGLE_USER to ON for database 'Clientes'.
+2024-01-21 22:07:32.40 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-21 22:07:32.40 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-21 22:07:33.22 spid54      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 22:07:33.22 spid54      Starting up database 'Clientes'.
+2024-01-21 22:07:33.22 spid54      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 22:07:33.22 spid54      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 22:07:33.40 spid54      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 22:07:33.42 spid54      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 22:07:33.51 spid54      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
+2024-01-21 22:07:33.59 spid54      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 22:07:33.59 spid54      Starting up database 'Clientes'.
+2024-01-21 22:07:33.59 spid54      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 22:07:33.60 spid54      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 22:07:33.81 spid54      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 22:07:33.86 spid9s      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 22:21:47.01 spid52      Setting database option SINGLE_USER to ON for database 'Clientes'.
+2024-01-21 22:21:54.06 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-21 22:21:54.06 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-21 22:21:54.96 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 22:21:54.96 spid52      Starting up database 'Clientes'.
+2024-01-21 22:21:54.96 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 22:21:54.96 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 22:21:55.17 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 22:21:55.19 spid52      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 22:21:55.28 spid52      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
+2024-01-21 22:21:55.37 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 22:21:55.37 spid52      Starting up database 'Clientes'.
+2024-01-21 22:21:55.37 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 22:21:55.37 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 22:21:55.61 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 22:21:55.66 spid6s      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 22:48:40.83 spid52      Setting database option SINGLE_USER to ON for database 'Clientes'.
+2024-01-21 22:48:46.80 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-21 22:48:46.80 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-21 22:48:56.78 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-21 22:48:56.78 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-21 22:48:57.61 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 22:48:57.61 spid52      Starting up database 'Clientes'.
+2024-01-21 22:48:57.61 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 22:48:57.61 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 22:48:57.83 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 22:48:57.85 spid52      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 22:48:57.94 spid52      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
+2024-01-21 22:48:58.02 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 22:48:58.02 spid52      Starting up database 'Clientes'.
+2024-01-21 22:48:58.02 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 22:48:58.02 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 22:48:58.27 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 22:48:58.32 spid20s     Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 22:49:24.61 spid52      Setting database option SINGLE_USER to ON for database 'Clientes'.
+2024-01-21 22:49:36.26 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-21 22:49:36.26 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-21 22:49:47.62 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-21 22:49:47.62 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-21 22:49:48.44 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 22:49:48.44 spid52      Starting up database 'Clientes'.
+2024-01-21 22:49:48.44 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 22:49:48.44 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 22:49:48.66 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 22:49:48.68 spid52      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 22:49:48.77 spid52      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
+2024-01-21 22:49:48.85 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 22:49:48.85 spid52      Starting up database 'Clientes'.
+2024-01-21 22:49:48.86 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 22:49:48.86 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 22:49:49.09 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 22:49:49.14 spid20s     Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 22:50:37.96 spid52      Setting database option SINGLE_USER to ON for database 'Clientes'.
+2024-01-21 22:50:45.74 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-21 22:50:45.74 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-21 22:51:12.84 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-21 22:51:12.84 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-21 22:51:13.71 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 22:51:13.72 spid52      Starting up database 'Clientes'.
+2024-01-21 22:51:13.72 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 22:51:13.72 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 22:51:13.94 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 22:51:13.96 spid52      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 22:51:14.05 spid52      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
+2024-01-21 22:51:14.13 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 22:51:14.13 spid52      Starting up database 'Clientes'.
+2024-01-21 22:51:14.13 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 22:51:14.14 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 22:51:14.38 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 22:51:14.43 spid2s      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 22:58:39.41 spid52      Setting database option SINGLE_USER to ON for database 'Clientes'.
+2024-01-21 22:58:55.05 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-21 22:58:55.05 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-21 22:59:11.77 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-21 22:59:11.77 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.26.0.1]
+2024-01-21 22:59:12.58 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 22:59:12.58 spid52      Starting up database 'Clientes'.
+2024-01-21 22:59:12.58 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 22:59:12.58 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 22:59:12.78 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 22:59:12.80 spid52      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 22:59:12.89 spid52      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
+2024-01-21 22:59:12.97 spid52      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-21 22:59:12.97 spid52      Starting up database 'Clientes'.
+2024-01-21 22:59:12.97 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-21 22:59:12.97 spid52      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-21 22:59:13.18 spid52      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-21 22:59:13.23 spid22s     Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-21 23:00:19.76 spid52      Setting database option SINGLE_USER to ON for database 'Clientes'.
