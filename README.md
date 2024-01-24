@@ -1,5 +1,9 @@
 # DemoCopernicus
-
+## Tecnologías utilizadas
+![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) 
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Sever-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)
 ## Ejecución
 Para poner en marcha la aplicación, siga estos pasos:
 1.	Parar el servicio de mssql local y arrancar el servicio de Docker, si no es posible que de problemas
