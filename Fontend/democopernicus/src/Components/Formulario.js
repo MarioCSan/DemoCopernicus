@@ -10,72 +10,52 @@ export const Formulario = ({ cliente }) => {
   const [pais, setPais] = useState("");
   const [errorApi, setErrorApi] = useState(false);
   const [mensajeError, setMensajeError] = useState("");
-
-  const urlbase = `https://localhost:7062/api/Clientes/ModificarCliente/${cliente.id}`;
-  console.log(cliente);
-
-  // const cambiarFormatofecha = (fechaCreacion) => {
-  //   const fecha = new Date(fechaCreacion.replace(" ", "T"));
-
-  //   if (!isNaN(fecha)) {
-  //     const fechaISO = fecha.toISOString();
-  //     setFechaCreacion(fechaISO);
-  //   } else {
-  //     console.log("La fecha en formato texto no es válida.");
-  //   }
-  // };
+  const [mensajeExito, setMensajeExito] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-
     const clienteData = {
-      email: email,
-      first: nombre,
-      last: apellido,
-      company: empresa,
-      createdAt: fechaCreacion,
+      email: email ?? cliente.email,
+      first: nombre ?? cliente.first,
+      last: apellido ?? cliente.last,
+      company: empresa ?? cliente.company,
+      createdAt: fechaCreacion
+        ? new Date(fechaCreacion).toISOString()
+        : cliente.createdAt,
       country: pais,
     };
 
     if (cliente.id === undefined) {
-      fetch("https://localhost:7062/api/Clientes", {
+      fetch("http://localhost:7001/api/Clientes", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(clienteData),
-      })
-        .then((response) => {
-          if (response.ok) {
-            alert("Usuario insertado con éxito");
-          } else {
-            setErrorApi(true);
-            setMensajeError(response);
-          }
-        })
-        .then((data) => {
-          console.log(data);
-        });
+      }).then((response) => {
+        if (response.ok) {
+          setMensajeExito("Usuario creado con éxito")
+        } else {
+          setErrorApi(true);
+          setMensajeError(response);
+        }
+      });
     } else {
-      fetch(`https://localhost:7062/api/Clientes/${cliente.id}`, {
-        method: "POST",
+      fetch(`http://localhost:7001/api/clientes/${cliente.id}`, {
+        method: "PUT",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(clienteData),
-      })
-        .then((response) => {
-          if (response.ok) {
-            alert("Usuario insertado con éxito");
-          } else {
-            setErrorApi(true);
-            setMensajeError(response);
-          }
-        })
-        .then((data) => {
-          console.log(data);
-        });
+      }).then((response) => {
+        if (response.ok) {
+         setMensajeExito("Usuario modificado con éxito")
+        } else {
+          setErrorApi(true);
+          setMensajeError(response);
+        }
+      });
     }
 
     // Reiniciar el form
@@ -91,15 +71,18 @@ export const Formulario = ({ cliente }) => {
       {errorApi ? (
         <div className="centered-container">
           <h1>Hay un problema con la recuperación de los datos.</h1>
-          <h2>{mensajeError}</h2>
+          <h2>No se puede acceder a la API.</h2>
+          <h3>Comprueba que todo este bien conectado</h3>
         </div>
       ) : (
         <div>
           <h1>
-            Formulario{" "}
-            {cliente.id === undefined ? "nuevo cliente" : "modificar cliente"}
+            {cliente.id === undefined
+              ? "Nuevo cliente"
+              : `Modificar ${cliente.first} ${cliente.last}`}
           </h1>
           <div className="form-container">
+            {mensajeExito}
             <div>
               <form onSubmit={handleSubmit}>
                 <div className="mb-5">
@@ -107,7 +90,7 @@ export const Formulario = ({ cliente }) => {
                   <input
                     id="email"
                     type="email"
-                    placeholder="Email"
+                    placeholder={cliente.email ?? "Email"}
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
@@ -117,7 +100,7 @@ export const Formulario = ({ cliente }) => {
                   <input
                     id="nombre"
                     type="text"
-                    placeholder="Nombre"
+                    placeholder={cliente.first ?? "Nombre"}
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
                   />
@@ -128,7 +111,7 @@ export const Formulario = ({ cliente }) => {
                   <input
                     id="apellido"
                     type="text"
-                    placeholder={cliente.last || "Apellido"}
+                    placeholder={cliente.last ?? "Apellido"}
                     value={apellido}
                     onChange={(e) => setApellido(e.target.value)}
                   />
@@ -139,7 +122,7 @@ export const Formulario = ({ cliente }) => {
                   <input
                     id="empresa"
                     type="text"
-                    placeholder="Empresa"
+                    placeholder={cliente.company ?? "Empresa"}
                     value={empresa}
                     onChange={(e) => setEmpresa(e.target.value)}
                   />
@@ -150,6 +133,7 @@ export const Formulario = ({ cliente }) => {
                   <input
                     id="alta"
                     type="datetime-local"
+                    placeholder={cliente.createdAt ?? "2000/01/01T00:00"}
                     value={fechaCreacion}
                     onChange={(e) => setFechaCreacion(e.target.value)}
                   />
@@ -159,7 +143,7 @@ export const Formulario = ({ cliente }) => {
                   <label htmlFor="pais">País</label>
                   <input
                     id="pais"
-                    placeholder="País"
+                    placeholder={cliente.country ?? "País"}
                     value={pais}
                     onChange={(e) => setPais(e.target.value)}
                   />

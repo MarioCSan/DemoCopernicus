@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, json, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Loader from "./Loader";
 
 export const Clientes = () => {
@@ -7,16 +7,16 @@ export const Clientes = () => {
   const [showLoader, setShowLoader] = useState(true);
   const [errorApi, setErrorApi] = useState(false);
   const location = useLocation();
+  const url ='http://localhost:7001/api/clientes/';
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:7001/api/clientes");
+      const response = await fetch(url);
       if (!response.ok) {
         setErrorApi(true);
         return;
       }
       const data = await response.json();
-      console.log(data);
       setClientes(data);
       setShowLoader(false);
     } catch (error) {
@@ -25,7 +25,7 @@ export const Clientes = () => {
   };
 
   function eliminarCliente(idCliente) {
-    fetch("https://localhost:7001/api/Clientes/EliminarCliente/" + idCliente, {
+    fetch(url+ idCliente, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -40,14 +40,19 @@ export const Clientes = () => {
         setClientes(
           clientes.filter((cliente) => cliente.idCliente !== idCliente)
         );
-        alert("Usuario eliminado");
+       
+        const index = clientes.findIndex((cliente) => cliente.id === idCliente);
+        if (index !== -1) {
+          clientes.splice(index, 1);
+          setClientes(clientes.slice());
+          alert("Usuario eliminado, se actualizara la lista de clientes");
+        } 
       })
       .catch(() => setErrorApi(true));
   }
 
   useEffect(() => {
-    console.log(clientes);
-    if (location.pathname !== "/") {
+    if (location.pathname !== "/" && clientes.length !== 0) {
       setShowLoader(false);
     }
 
@@ -97,7 +102,7 @@ export const Clientes = () => {
                     {clientes.map((item, i) => {
                       return (
                         <tr key={i}>
-                          <td key={item.idCliente}>{item.idCliente}</td>
+                          <td key={item.id}>{item.id}</td>
                           <td>{item.email}</td>
                           <td>{item.first}</td>
                           <td>{item.last}</td>
@@ -114,7 +119,7 @@ export const Clientes = () => {
 
                             <button
                               className="button btn-danger"
-                              onClick={() => eliminarCliente(item.idCliente)}
+                              onClick={() => eliminarCliente(item.id)}
                             >
                               Eliminar Cliente
                             </button>

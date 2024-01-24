@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\mario\\Documents\\Proyectos\\DemoCopernicus\\src\\CustomersService\\CustomersService.csproj": {}
+    "C:\\Users\\mario\\Documents\\Proyectos\\DemoCopernicus\\src\\CustomersService\\CustomersService.csproj": {}
   },
   "projects": {
-    "c:\\Users\\mario\\Documents\\Proyectos\\DemoCopernicus\\src\\CustomersService\\CustomersService.csproj": {
+    "C:\\Users\\mario\\Documents\\Proyectos\\DemoCopernicus\\src\\CustomersService\\CustomersService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\mario\\Documents\\Proyectos\\DemoCopernicus\\src\\CustomersService\\CustomersService.csproj",
+        "projectUniqueName": "C:\\Users\\mario\\Documents\\Proyectos\\DemoCopernicus\\src\\CustomersService\\CustomersService.csproj",
         "projectName": "CustomersService",
-        "projectPath": "c:\\Users\\mario\\Documents\\Proyectos\\DemoCopernicus\\src\\CustomersService\\CustomersService.csproj",
+        "projectPath": "C:\\Users\\mario\\Documents\\Proyectos\\DemoCopernicus\\src\\CustomersService\\CustomersService.csproj",
         "packagesPath": "C:\\Users\\mario\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\mario\\Documents\\Proyectos\\DemoCopernicus\\src\\CustomersService\\obj\\",
+        "outputPath": "C:\\Users\\mario\\Documents\\Proyectos\\DemoCopernicus\\src\\CustomersService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

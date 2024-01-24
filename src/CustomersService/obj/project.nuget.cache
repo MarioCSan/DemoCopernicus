@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nD1GA8Otwfqtr6ZL9p8p96YVf/JtEUeI8N48rmSI5/5lALXkiaWCKtnI3rJ+fm2vc5gI4JrfPxZlhoozUKPDXg==",
+  "dgSpecHash": "SLybkT6rpf6OcUMF0yar9Ogay2XLo2gMJth5CWSoHXJAoh7PznFwpTGxtaWD8v+zKbYtVqcqHlSQX03FO6jm8Q==",
   "success": true,
-  "projectFilePath": "c:\\Users\\mario\\Documents\\Proyectos\\DemoCopernicus\\src\\CustomersService\\CustomersService.csproj",
+  "projectFilePath": "C:\\Users\\mario\\Documents\\Proyectos\\DemoCopernicus\\src\\CustomersService\\CustomersService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mario\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

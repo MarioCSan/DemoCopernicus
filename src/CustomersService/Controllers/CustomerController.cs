@@ -74,8 +74,8 @@ public class clienteController : ControllerBase
             .FirstOrDefaultAsync(x => x.Id == id);
 
         if (cliente == null) return NotFound();
-        var i = id; 
-        
+        var i = id;
+
         cliente.Email = updateClienteDTO.Email ?? cliente.Email;
         cliente.First = updateClienteDTO.First ?? cliente.First;
         cliente.Last = updateClienteDTO.Last ?? cliente.Last;

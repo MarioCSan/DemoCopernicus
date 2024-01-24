@@ -11,8 +11,10 @@ function UpdateCliente() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch(`http://localhost:7001/api/clientes/${idCliente}`);
-    
+      const response = await fetch(
+        `http://localhost:7001/api/clientes/${idCliente}`
+      );
+
       if (!response.ok) {
         setErrorApi(true);
         return;
@@ -26,14 +28,27 @@ function UpdateCliente() {
   };
 
   useEffect(() => {
-    if (location.pathname === `/EditarCliente/${idCliente}` && Object.keys(cliente).length === 0) {
+    if (
+      location.pathname === `/EditarCliente/${idCliente}` &&
+      Object.keys(cliente).length === 0
+    ) {
       fetchData();
     }
-  }, [location.pathname, cliente, idCliente]);
+  }, [location.pathname, idCliente]);
 
   return (
     <>
-      <Formulario cliente={cliente} />
+      {errorApi ? (
+        <div className="centered-container">
+          <h1>Hay un problema con la recuperación de los datos.</h1>
+          <h2>No se puede acceder a la API.</h2>
+          <h3>Comprueba que todo este bien conectado</h3>
+        </div>
+      ) : (
+        <div>
+          <Formulario cliente={cliente} />
+        </div>
+      )}
     </>
   );
 }
