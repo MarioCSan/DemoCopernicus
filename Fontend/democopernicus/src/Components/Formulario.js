@@ -11,23 +11,26 @@ export const Formulario = ({ cliente }) => {
   const [errorApi, setErrorApi] = useState(false);
   const [mensajeError, setMensajeError] = useState("");
   const [mensajeExito, setMensajeExito] = useState("");
-
+  const url = "http://localhost:7001/api/clientes";
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const clienteData = {
-      email: email ?? cliente.email,
-      first: nombre ?? cliente.first,
-      last: apellido ?? cliente.last,
-      company: empresa ?? cliente.company,
-      createdAt: fechaCreacion
-        ? new Date(fechaCreacion).toISOString()
-        : cliente.createdAt,
-      country: pais,
+      email: email !== "" && email !== undefined ? email : cliente.email,
+      first: nombre !== "" && nombre !== undefined ? nombre : cliente.first,
+      last: apellido !== "" && apellido !== undefined ? apellido : cliente.last,
+      company:
+        empresa !== "" && empresa !== undefined ? empresa : cliente.company,
+      createdAt:
+        fechaCreacion !== "" && fechaCreacion !== undefined
+          ? fechaCreacion
+          : cliente.createdAt,
+      country: pais !== "" && pais !== undefined ? pais : cliente.country,
     };
 
     if (cliente.id === undefined) {
-      fetch("http://localhost:7001/api/Clientes", {
+      console.log(JSON.stringify(clienteData));
+      fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -35,14 +38,15 @@ export const Formulario = ({ cliente }) => {
         body: JSON.stringify(clienteData),
       }).then((response) => {
         if (response.ok) {
-          setMensajeExito("Usuario creado con éxito")
+          setMensajeExito("Usuario creado con éxito");
         } else {
           setErrorApi(true);
           setMensajeError(response);
         }
       });
     } else {
-      fetch(`http://localhost:7001/api/clientes/${cliente.id}`, {
+      console.log(JSON.stringify(clienteData));
+      fetch(`${url}/${cliente.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -50,10 +54,11 @@ export const Formulario = ({ cliente }) => {
         body: JSON.stringify(clienteData),
       }).then((response) => {
         if (response.ok) {
-         setMensajeExito("Usuario modificado con éxito")
+          setMensajeExito("Usuario modificado con éxito");
         } else {
           setErrorApi(true);
           setMensajeError(response);
+          console.log(response);
         }
       });
     }
@@ -93,6 +98,7 @@ export const Formulario = ({ cliente }) => {
                     placeholder={cliente.email ?? "Email"}
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    required
                   />
                 </div>
                 <div className="mb-5">
@@ -103,6 +109,7 @@ export const Formulario = ({ cliente }) => {
                     placeholder={cliente.first ?? "Nombre"}
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
+                    required
                   />
                 </div>
 
@@ -114,6 +121,7 @@ export const Formulario = ({ cliente }) => {
                     placeholder={cliente.last ?? "Apellido"}
                     value={apellido}
                     onChange={(e) => setApellido(e.target.value)}
+                    required
                   />
                 </div>
 
@@ -125,6 +133,7 @@ export const Formulario = ({ cliente }) => {
                     placeholder={cliente.company ?? "Empresa"}
                     value={empresa}
                     onChange={(e) => setEmpresa(e.target.value)}
+                    required
                   />
                 </div>
 
@@ -136,6 +145,7 @@ export const Formulario = ({ cliente }) => {
                     placeholder={cliente.createdAt ?? "2000/01/01T00:00"}
                     value={fechaCreacion}
                     onChange={(e) => setFechaCreacion(e.target.value)}
+                    required
                   />
                 </div>
 
@@ -146,6 +156,7 @@ export const Formulario = ({ cliente }) => {
                     placeholder={cliente.country ?? "País"}
                     value={pais}
                     onChange={(e) => setPais(e.target.value)}
+                    required
                   />
                 </div>
 
