@@ -1,1 +1,6 @@
 *.cs linguist-language=csharp
+*.roff linguist-detectable=false
+*.cs linguist-detectable=true
+*.js linguist-detectable=true
+*.html linguist-detectable=true
+*.csss linguist-detectable=true
