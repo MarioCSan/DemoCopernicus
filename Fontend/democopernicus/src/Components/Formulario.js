@@ -80,7 +80,7 @@ export const Formulario = ({ cliente }) => {
           <h3>Comprueba que todo este bien conectado</h3>
         </div>
       ) : (
-        <div>
+        <div className="centered-container">
           <h1>
             {cliente.id === undefined
               ? "Nuevo cliente"
@@ -92,6 +92,7 @@ export const Formulario = ({ cliente }) => {
               <form onSubmit={handleSubmit}>
                 <div className="mb-5">
                   <label htmlFor="email">Email</label>
+                  <br />
                   <input
                     id="email"
                     type="email"
@@ -103,6 +104,7 @@ export const Formulario = ({ cliente }) => {
                 </div>
                 <div className="mb-5">
                   <label htmlFor="nombre">Nombre</label>
+                  <br />
                   <input
                     id="nombre"
                     type="text"
@@ -115,6 +117,7 @@ export const Formulario = ({ cliente }) => {
 
                 <div className="mb-5">
                   <label htmlFor="apellido">Apellido</label>
+                  <br />
                   <input
                     id="apellido"
                     type="text"
@@ -127,6 +130,7 @@ export const Formulario = ({ cliente }) => {
 
                 <div className="mb-5">
                   <label htmlFor="alta">Empresa</label>
+                  <br />
                   <input
                     id="empresa"
                     type="text"
@@ -139,6 +143,7 @@ export const Formulario = ({ cliente }) => {
 
                 <div className="mb-5">
                   <label htmlFor="alta">Fecha creacion</label>
+                  <br />
                   <input
                     id="alta"
                     type="datetime-local"
@@ -151,6 +156,7 @@ export const Formulario = ({ cliente }) => {
 
                 <div className="mb-5">
                   <label htmlFor="pais">País</label>
+                  <br />
                   <input
                     id="pais"
                     placeholder={cliente.country ?? "País"}

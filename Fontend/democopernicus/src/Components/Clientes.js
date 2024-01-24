@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Loader from "./Loader";
+import { Bounce, toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const Clientes = () => {
   const [clientes, setClientes] = useState([]);
   const [showLoader, setShowLoader] = useState(true);
   const [errorApi, setErrorApi] = useState(false);
   const location = useLocation();
-  const url ='http://localhost:7001/api/clientes/';
+  const url = "http://localhost:7001/api/clientes/";
 
   const fetchData = async () => {
     try {
@@ -25,7 +27,7 @@ export const Clientes = () => {
   };
 
   function eliminarCliente(idCliente) {
-    fetch(url+ idCliente, {
+    fetch(url + idCliente, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -37,16 +39,26 @@ export const Clientes = () => {
         }
       })
       .then(() => {
+        toast.success("Usuario eliminado con exito", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
         setClientes(
           clientes.filter((cliente) => cliente.idCliente !== idCliente)
         );
-       
+
         const index = clientes.findIndex((cliente) => cliente.id === idCliente);
         if (index !== -1) {
           clientes.splice(index, 1);
           setClientes(clientes.slice());
-          alert("Usuario eliminado, se actualizara la lista de clientes");
-        } 
+        }
       })
       .catch(() => setErrorApi(true));
   }
@@ -79,6 +91,18 @@ export const Clientes = () => {
             </div>
           ) : (
             <div>
+              <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+              />
               <div style={{ padding: "2%" }}>
                 <Link to="/NuevoCliente" className="button btn-nuevo">
                   Nuevo cliente
