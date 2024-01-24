@@ -1,5 +1,5 @@
 *.cs linguist-language=csharp
-*.3 linguist-language=text
+*.3 linguist-documentation
 *.roff linguist-detectable=false
 *.cs linguist-detectable=true
 *.js linguist-detectable=true
