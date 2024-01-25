@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Bounce, ToastContainer, toast } from "react-toastify";
 
 export const Formulario = ({ cliente }) => {
   const [nombre, setNombre] = useState("");
@@ -9,9 +10,7 @@ export const Formulario = ({ cliente }) => {
   const [fechaCreacion, setFechaCreacion] = useState("");
   const [pais, setPais] = useState("");
   const [errorApi, setErrorApi] = useState(false);
-  const [mensajeError, setMensajeError] = useState("");
-  const [mensajeExito, setMensajeExito] = useState("");
-  const url = "http://localhost:7001/api/clientes";
+  const url = "http://localhost:7001/api/clientes/";
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -38,15 +37,15 @@ export const Formulario = ({ cliente }) => {
         body: JSON.stringify(clienteData),
       }).then((response) => {
         if (response.ok) {
-          setMensajeExito("Usuario creado con éxito");
+          toastExito("creado");
         } else {
           setErrorApi(true);
-          setMensajeError(response);
+          toastError("crear");
         }
       });
     } else {
       console.log(JSON.stringify(clienteData));
-      fetch(`${url}/${cliente.id}`, {
+      fetch(`${url}${cliente.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -54,15 +53,40 @@ export const Formulario = ({ cliente }) => {
         body: JSON.stringify(clienteData),
       }).then((response) => {
         if (response.ok) {
-          setMensajeExito("Usuario modificado con éxito");
+          toastExito("modificado");
         } else {
-          setErrorApi(true);
-          setMensajeError(response);
-          console.log(response);
+          toastError("modificar");
         }
       });
     }
 
+    const toastError = (metodo) => {
+      toast.error(`Hubo un problema al ${metodo} el cliente`, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+    };
+
+    const toastExito = (metodo) => {
+      toast.success(`Usuario ${metodo} con exito`, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+    };
     // Reiniciar el form
     setEmail("");
     setNombre("");
@@ -87,7 +111,18 @@ export const Formulario = ({ cliente }) => {
               : `Modificar ${cliente.first} ${cliente.last}`}
           </h1>
           <div className="form-container">
-            {mensajeExito}
+            <ToastContainer
+              position="top-center"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
+            />
             <div>
               <form onSubmit={handleSubmit}>
                 <div className="mb-5">

@@ -56,8 +56,7 @@ export const Clientes = () => {
 
         const index = clientes.findIndex((cliente) => cliente.id === idCliente);
         if (index !== -1) {
-          clientes.splice(index, 1);
-          setClientes(clientes.slice());
+          setClientes(clientes.filter((cliente) => cliente.idCliente !== idCliente));
         }
       })
       .catch(() => setErrorApi(true));
@@ -112,7 +111,7 @@ export const Clientes = () => {
                 <table border={1}>
                   <thead>
                     <tr>
-                      <td>IdCliente</td>
+                      <td>Id</td>
                       <td>email</td>
                       <td>Nombre</td>
                       <td>Apellido</td>

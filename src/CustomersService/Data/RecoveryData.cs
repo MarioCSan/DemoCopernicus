@@ -38,13 +38,11 @@ public class RecoveryData
             }
             catch (HttpRequestException ex)
             {
-                // Loguea la excepción o lanza una excepción personalizada
                 Console.WriteLine($"Error en la solicitud HTTP: {ex.Message}");
                 return null;
             }
             catch (JsonException ex)
             {
-                // Loguea la excepción o lanza una excepción personalizada
                 Console.WriteLine($"Error al deserializar JSON: {ex.Message}");
                 return null;
             }

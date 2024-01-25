@@ -1,196 +1,281 @@
-2024-01-24 10:17:44.49 Server      Microsoft SQL Server 2022 (RTM-CU11) (KB5032679) - 16.0.4105.2 (X64) 
+2024-01-24 16:44:51.63 Server      Microsoft SQL Server 2022 (RTM-CU11) (KB5032679) - 16.0.4105.2 (X64) 
 	Nov 14 2023 18:33:19 
 	Copyright (C) 2022 Microsoft Corporation
 	Developer Edition (64-bit) on Linux (Ubuntu 22.04.3 LTS) <X64>
-2024-01-24 10:17:44.50 Server      UTC adjustment: 0:00
-2024-01-24 10:17:44.50 Server      (c) Microsoft Corporation.
-2024-01-24 10:17:44.50 Server      All rights reserved.
-2024-01-24 10:17:44.50 Server      Server process ID is 508.
-2024-01-24 10:17:44.50 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
-2024-01-24 10:17:44.50 Server      Registry startup parameters: 
+2024-01-24 16:44:51.63 Server      UTC adjustment: 0:00
+2024-01-24 16:44:51.63 Server      (c) Microsoft Corporation.
+2024-01-24 16:44:51.63 Server      All rights reserved.
+2024-01-24 16:44:51.63 Server      Server process ID is 508.
+2024-01-24 16:44:51.63 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2024-01-24 16:44:51.63 Server      Registry startup parameters: 
 	 -d /var/opt/mssql/data/master.mdf
 	 -l /var/opt/mssql/data/mastlog.ldf
 	 -e /var/opt/mssql/log/errorlog
-2024-01-24 10:17:44.51 Server      SQL Server detected 1 sockets with 6 cores per socket and 12 logical processors per socket, 12 total logical processors; using 12 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
-2024-01-24 10:17:44.51 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
-2024-01-24 10:17:44.51 Server      Detected 10159 MB of RAM. This is an informational message; no user action is required.
-2024-01-24 10:17:44.51 Server      Using conventional memory in the memory manager.
-2024-01-24 10:17:44.51 Server      Detected pause instruction latency: 36 cycles.
-2024-01-24 10:17:44.51 Server      SQL Server detected the following NUMA node configuration (NUMA Node number 0, Processor Group number 0, CPU Mask 0x0000000000000fff).
-2024-01-24 10:17:44.52 Server      Page exclusion bitmap is enabled.
-2024-01-24 10:17:44.56 Server      Buffer pool extension is not supported on Linux platform.
-2024-01-24 10:17:44.56 Server      Buffer Pool: Allocating 2097152 bytes for 1522456 hashPages.
-2024-01-24 10:17:44.64 Server      Buffer pool extension is already disabled. No action is necessary.
-2024-01-24 10:17:44.89 Server      Installing Client TLS certificates to the store.
-2024-01-24 10:17:44.90 Server      Error searching first file in /var/opt/mssql/security/ca-certificates: 3(The system cannot find the path specified.)
-2024-01-24 10:17:44.90 Server      CPU vectorization level(s) detected:  SSE SSE2 SSE3 SSSE3 SSE41 SSE42 AVX AVX2 POPCNT BMI1 BMI2
-2024-01-24 10:17:44.93 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
-2024-01-24 10:17:44.95 Server      Query Store settings initialized with enabled = 1, 
-2024-01-24 10:17:44.95 Server      The maximum number of dedicated administrator connections for this instance is '1'
-2024-01-24 10:17:44.96 Server      Node configuration: node 0: CPU mask: 0x0000000000000fff:0 Active CPU mask: 0x0000000000000fff:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
-2024-01-24 10:17:44.97 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
-2024-01-24 10:17:44.99 Server      In-Memory OLTP initialized on standard machine.
-2024-01-24 10:17:45.06 Server      CLR version v4.0.30319 loaded.
-2024-01-24 10:17:45.07 Server      [INFO] Created Extended Events session 'hkenginexesession'
-2024-01-24 10:17:45.08 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
-2024-01-24 10:17:45.09 Server      Total Log Writer threads: 2. This is an informational message; no user action is required.
-2024-01-24 10:17:45.10 Server      clwb is selected for pmem flush operation.
-2024-01-24 10:17:45.10 Server      Software Usage Metrics is disabled.
-2024-01-24 10:17:45.11 spid34s     [1]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-24 10:17:45.11 spid34s     Starting up database 'master'.
-2024-01-24 10:17:45.30 Server      Common language runtime (CLR) functionality initialized.
-2024-01-24 10:17:45.32 Server      External governance manager initialized
-2024-01-24 10:17:45.36 spid34s     21 transactions rolled forward in database 'master' (1:0). This is an informational message only. No user action is required.
-2024-01-24 10:17:45.37 spid34s     0 transactions rolled back in database 'master' (1:0). This is an informational message only. No user action is required.
-2024-01-24 10:17:45.37 spid34s     Recovery is writing a checkpoint in database 'master' (1). This is an informational message only. No user action is required.
-2024-01-24 10:17:45.45 spid34s     [32762]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-24 10:17:45.45 spid37s     [32767]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-24 10:17:45.46 spid34s     Starting up database 'model_replicatedmaster'.
-2024-01-24 10:17:45.46 spid37s     Starting up database 'mssqlsystemresource'.
-2024-01-24 10:17:45.46 spid37s     The resource database build version is 16.00.4105. This is an informational message only. No user action is required.
-2024-01-24 10:17:45.47 spid37s     [3]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-24 10:17:45.48 spid37s     Starting up database 'model'.
-2024-01-24 10:17:45.72 spid34s     The tail of the log for database model_replicatedmaster is being rewritten to match the new sector size of 4096 bytes.  2560 bytes at offset 99840 in file /var/opt/mssql/data/model_replicatedmaster.ldf will be written.
-2024-01-24 10:17:45.73 spid34s     Converting database 'model_replicatedmaster' from version 927 to the current version 957.
-2024-01-24 10:17:45.74 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 927 to version 928.
-2024-01-24 10:17:45.75 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 928 to version 929.
-2024-01-24 10:17:45.78 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 929 to version 930.
-2024-01-24 10:17:46.02 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 930 to version 931.
-2024-01-24 10:17:46.03 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 931 to version 932.
-2024-01-24 10:17:46.05 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 932 to version 933.
-2024-01-24 10:17:46.07 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 933 to version 934.
-2024-01-24 10:17:46.09 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 934 to version 935.
-2024-01-24 10:17:46.11 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 935 to version 936.
-2024-01-24 10:17:46.13 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 936 to version 937.
-2024-01-24 10:17:46.14 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 937 to version 938.
-2024-01-24 10:17:46.16 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 938 to version 939.
-2024-01-24 10:17:46.18 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 939 to version 940.
-2024-01-24 10:17:46.20 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 940 to version 941.
-2024-01-24 10:17:46.22 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 941 to version 942.
-2024-01-24 10:17:46.23 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 942 to version 943.
-2024-01-24 10:17:46.50 spid44s     A self-generated certificate was successfully loaded for encryption.
-2024-01-24 10:17:46.50 spid44s     Server is listening on [ 'any' <ipv6> 1433] accept sockets 1.
-2024-01-24 10:17:46.50 spid44s     Server is listening on [ 'any' <ipv4> 1433] accept sockets 1.
-2024-01-24 10:17:46.50 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 943 to version 944.
-2024-01-24 10:17:46.50 Server      Server is listening on [ ::1 <ipv6> 1434] accept sockets 1.
-2024-01-24 10:17:46.50 Server      Server is listening on [ 127.0.0.1 <ipv4> 1434] accept sockets 1.
-2024-01-24 10:17:46.50 Server      Dedicated admin connection support was established for listening locally on port 1434.
-2024-01-24 10:17:46.51 spid44s     Server is listening on [ ::1 <ipv6> 1431] accept sockets 1.
-2024-01-24 10:17:46.51 spid44s     Server is listening on [ 127.0.0.1 <ipv4> 1431] accept sockets 1.
-2024-01-24 10:17:46.51 spid44s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
-2024-01-24 10:17:46.52 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 944 to version 945.
-2024-01-24 10:17:46.54 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 945 to version 946.
-2024-01-24 10:17:46.56 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 946 to version 947.
-2024-01-24 10:17:46.58 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 947 to version 948.
-2024-01-24 10:17:46.60 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 948 to version 949.
-2024-01-24 10:17:46.61 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 949 to version 950.
-2024-01-24 10:17:46.63 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 950 to version 951.
-2024-01-24 10:17:46.66 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 951 to version 952.
-2024-01-24 10:17:46.67 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 952 to version 953.
-2024-01-24 10:17:46.69 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 953 to version 954.
-2024-01-24 10:17:46.71 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 954 to version 955.
-2024-01-24 10:17:46.73 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 955 to version 956.
-2024-01-24 10:17:46.90 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 956 to version 957.
-2024-01-24 10:17:47.00 spid34s     [32761]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-24 10:17:47.00 spid34s     Starting up database 'model_msdb'.
-2024-01-24 10:17:47.22 spid34s     Converting database 'model_msdb' from version 927 to the current version 957.
-2024-01-24 10:17:47.22 spid34s     Database 'model_msdb' running the upgrade step from version 927 to version 928.
-2024-01-24 10:17:47.25 spid34s     Database 'model_msdb' running the upgrade step from version 928 to version 929.
-2024-01-24 10:17:47.28 spid34s     Database 'model_msdb' running the upgrade step from version 929 to version 930.
-2024-01-24 10:17:47.30 spid34s     Database 'model_msdb' running the upgrade step from version 930 to version 931.
-2024-01-24 10:17:47.32 spid34s     Database 'model_msdb' running the upgrade step from version 931 to version 932.
-2024-01-24 10:17:47.33 spid34s     Database 'model_msdb' running the upgrade step from version 932 to version 933.
-2024-01-24 10:17:47.45 spid34s     Database 'model_msdb' running the upgrade step from version 933 to version 934.
-2024-01-24 10:17:47.47 spid34s     Database 'model_msdb' running the upgrade step from version 934 to version 935.
-2024-01-24 10:17:47.49 spid34s     Database 'model_msdb' running the upgrade step from version 935 to version 936.
-2024-01-24 10:17:47.51 spid34s     Database 'model_msdb' running the upgrade step from version 936 to version 937.
-2024-01-24 10:17:47.53 spid34s     Database 'model_msdb' running the upgrade step from version 937 to version 938.
-2024-01-24 10:17:47.55 spid34s     Database 'model_msdb' running the upgrade step from version 938 to version 939.
-2024-01-24 10:17:47.56 spid34s     Database 'model_msdb' running the upgrade step from version 939 to version 940.
-2024-01-24 10:17:47.58 spid34s     Database 'model_msdb' running the upgrade step from version 940 to version 941.
-2024-01-24 10:17:47.60 spid34s     Database 'model_msdb' running the upgrade step from version 941 to version 942.
-2024-01-24 10:17:47.62 spid34s     Database 'model_msdb' running the upgrade step from version 942 to version 943.
-2024-01-24 10:17:47.76 spid34s     Database 'model_msdb' running the upgrade step from version 943 to version 944.
-2024-01-24 10:17:47.78 spid34s     Database 'model_msdb' running the upgrade step from version 944 to version 945.
-2024-01-24 10:17:47.93 spid34s     Database 'model_msdb' running the upgrade step from version 945 to version 946.
-2024-01-24 10:17:47.95 spid34s     Database 'model_msdb' running the upgrade step from version 946 to version 947.
-2024-01-24 10:17:47.97 spid34s     Database 'model_msdb' running the upgrade step from version 947 to version 948.
-2024-01-24 10:17:47.98 spid34s     Database 'model_msdb' running the upgrade step from version 948 to version 949.
-2024-01-24 10:17:48.00 spid34s     Database 'model_msdb' running the upgrade step from version 949 to version 950.
-2024-01-24 10:17:48.02 spid34s     Database 'model_msdb' running the upgrade step from version 950 to version 951.
-2024-01-24 10:17:48.05 spid34s     Database 'model_msdb' running the upgrade step from version 951 to version 952.
-2024-01-24 10:17:48.06 spid34s     Database 'model_msdb' running the upgrade step from version 952 to version 953.
-2024-01-24 10:17:48.08 spid34s     Database 'model_msdb' running the upgrade step from version 953 to version 954.
-2024-01-24 10:17:48.10 spid34s     Database 'model_msdb' running the upgrade step from version 954 to version 955.
-2024-01-24 10:17:48.12 spid34s     Database 'model_msdb' running the upgrade step from version 955 to version 956.
-2024-01-24 10:17:48.15 spid34s     Database 'model_msdb' running the upgrade step from version 956 to version 957.
-2024-01-24 10:17:48.25 spid34s     Resource governor reconfiguration succeeded.
-2024-01-24 10:17:48.25 spid47s     Attribute synchronization initialized
-2024-01-24 10:17:48.25 spid34s     SQL Server Audit is starting the audits. This is an informational message. No user action is required.
-2024-01-24 10:17:48.25 spid47s     Attribute synchronization manager initialized
-2024-01-24 10:17:48.25 spid34s     SQL Server Audit has started the audits. This is an informational message. No user action is required.
-2024-01-24 10:17:48.25 spid34s     XE session 'system_health' started.
-2024-01-24 10:17:48.37 spid34s     SQL Trace ID 1 was started by login "sa".
-2024-01-24 10:17:48.39 spid34s     Server name is 'mssql-db'. This is an informational message only. No user action is required.
-2024-01-24 10:17:48.40 spid37s     Clearing tempdb database.
-2024-01-24 10:17:48.40 spid62s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
-2024-01-24 10:17:48.40 spid59s     [4]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-24 10:17:48.40 spid58s     [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-24 10:17:48.40 spid62s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
-2024-01-24 10:17:48.40 spid59s     Starting up database 'msdb'.
-2024-01-24 10:17:48.40 spid58s     Starting up database 'Clientes'.
-2024-01-24 10:17:48.41 spid58s     RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2024-01-24 10:17:48.41 spid58s     RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2024-01-24 10:17:48.73 spid59s     1 transactions rolled forward in database 'msdb' (4:0). This is an informational message only. No user action is required.
-2024-01-24 10:17:48.75 spid58s     Parallel redo is started for database 'Clientes' with worker pool size [6].
-2024-01-24 10:17:48.76 spid58s     65 transactions rolled forward in database 'Clientes' (5:0). This is an informational message only. No user action is required.
-2024-01-24 10:17:48.78 spid59s     0 transactions rolled back in database 'msdb' (4:0). This is an informational message only. No user action is required.
-2024-01-24 10:17:48.79 spid59s     0 transactions rolled back in database 'Clientes' (5:0). This is an informational message only. No user action is required.
-2024-01-24 10:17:48.79 spid59s     Recovery is writing a checkpoint in database 'Clientes' (5). This is an informational message only. No user action is required.
-2024-01-24 10:17:48.82 spid59s     Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
-2024-01-24 10:17:49.17 spid37s     [2]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-24 10:17:49.17 spid37s     Starting up database 'tempdb'.
-2024-01-24 10:17:50.10 spid35s     Using 'dbghelp.dll' version '4.0.5'
-2024-01-24 10:17:51.28 spid37s     The tempdb database has 8 data file(s).
-2024-01-24 10:17:51.29 spid58s     The Service Broker endpoint is in disabled or stopped state.
-2024-01-24 10:17:51.29 spid58s     The Database Mirroring endpoint is in disabled or stopped state.
-2024-01-24 10:17:51.29 spid58s     Service Broker manager has started.
-2024-01-24 10:17:51.29 spid34s     Recovery is complete. This is an informational message only. No user action is required.
-2024-01-24 11:17:43.50 spid20s     [DevOpsSnapshotTelemetryTask] Evaluating the background task.
-2024-01-24 12:22:25.53 spid51      Setting database option SINGLE_USER to ON for database 'Clientes'.
-2024-01-24 12:22:34.21 Logon       Error: 18456, Severity: 14, State: 38.
-2024-01-24 12:22:34.21 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.20.0.1]
-2024-01-24 12:22:35.04 spid51      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-24 12:22:35.04 spid51      Starting up database 'Clientes'.
-2024-01-24 12:22:35.04 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2024-01-24 12:22:35.04 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2024-01-24 12:22:35.27 spid51      Parallel redo is started for database 'Clientes' with worker pool size [6].
-2024-01-24 12:22:35.29 spid51      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
-2024-01-24 12:22:35.39 spid51      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
-2024-01-24 12:22:35.47 spid51      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-24 12:22:35.47 spid51      Starting up database 'Clientes'.
-2024-01-24 12:22:35.47 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2024-01-24 12:22:35.47 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2024-01-24 12:22:35.70 spid51      Parallel redo is started for database 'Clientes' with worker pool size [6].
-2024-01-24 12:22:35.75 spid11s     Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
-2024-01-24 16:30:50.98 spid51      Setting database option SINGLE_USER to ON for database 'Clientes'.
-2024-01-24 16:31:20.80 Logon       Error: 18456, Severity: 14, State: 38.
-2024-01-24 16:31:20.80 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.20.0.1]
-2024-01-24 16:31:21.74 spid51      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-24 16:31:21.74 spid51      Starting up database 'Clientes'.
-2024-01-24 16:31:21.74 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2024-01-24 16:31:21.75 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2024-01-24 16:31:22.00 spid51      Parallel redo is started for database 'Clientes' with worker pool size [6].
-2024-01-24 16:31:22.03 spid51      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
-2024-01-24 16:31:22.14 spid51      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
-2024-01-24 16:31:22.23 spid51      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-01-24 16:31:22.23 spid51      Starting up database 'Clientes'.
-2024-01-24 16:31:22.23 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
-2024-01-24 16:31:22.23 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
-2024-01-24 16:31:22.48 spid51      Parallel redo is started for database 'Clientes' with worker pool size [6].
-2024-01-24 16:31:22.54 spid3s      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
-2024-01-24 16:35:09.18 spid34s     Always On: The availability replica manager is going offline because SQL Server is shutting down. This is an informational message only. No user action is required.
-2024-01-24 16:35:09.21 spid34s     SQL Server is terminating in response to a 'stop' request from Service Control Manager. This is an informational message only. No user action is required.
-2024-01-24 16:35:09.40 spid58s     Service Broker manager has shut down.
-2024-01-24 16:35:09.55 spid34s     .NET Framework runtime has been stopped.
-2024-01-24 16:35:11.27 spid34s     SQL Trace was stopped due to server shutdown. Trace ID = '1'. This is an informational message only; no user action is required.
+2024-01-24 16:44:51.64 Server      SQL Server detected 1 sockets with 6 cores per socket and 12 logical processors per socket, 12 total logical processors; using 12 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
+2024-01-24 16:44:51.64 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
+2024-01-24 16:44:51.64 Server      Detected 10159 MB of RAM. This is an informational message; no user action is required.
+2024-01-24 16:44:51.64 Server      Using conventional memory in the memory manager.
+2024-01-24 16:44:51.64 Server      Detected pause instruction latency: 35 cycles.
+2024-01-24 16:44:51.64 Server      SQL Server detected the following NUMA node configuration (NUMA Node number 0, Processor Group number 0, CPU Mask 0x0000000000000fff).
+2024-01-24 16:44:51.66 Server      Page exclusion bitmap is enabled.
+2024-01-24 16:44:51.70 Server      Buffer pool extension is not supported on Linux platform.
+2024-01-24 16:44:51.70 Server      Buffer Pool: Allocating 2097152 bytes for 1522125 hashPages.
+2024-01-24 16:44:51.81 Server      Buffer pool extension is already disabled. No action is necessary.
+2024-01-24 16:44:52.11 Server      Installing Client TLS certificates to the store.
+2024-01-24 16:44:52.12 Server      Error searching first file in /var/opt/mssql/security/ca-certificates: 3(The system cannot find the path specified.)
+2024-01-24 16:44:52.12 Server      CPU vectorization level(s) detected:  SSE SSE2 SSE3 SSSE3 SSE41 SSE42 AVX AVX2 POPCNT BMI1 BMI2
+2024-01-24 16:44:52.16 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
+2024-01-24 16:44:52.18 Server      Query Store settings initialized with enabled = 1, 
+2024-01-24 16:44:52.19 Server      The maximum number of dedicated administrator connections for this instance is '1'
+2024-01-24 16:44:52.19 Server      Node configuration: node 0: CPU mask: 0x0000000000000fff:0 Active CPU mask: 0x0000000000000fff:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
+2024-01-24 16:44:52.21 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
+2024-01-24 16:44:52.24 Server      In-Memory OLTP initialized on standard machine.
+2024-01-24 16:44:52.30 Server      CLR version v4.0.30319 loaded.
+2024-01-24 16:44:52.36 Server      [INFO] Created Extended Events session 'hkenginexesession'
+2024-01-24 16:44:52.36 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
+2024-01-24 16:44:52.37 Server      Total Log Writer threads: 2. This is an informational message; no user action is required.
+2024-01-24 16:44:52.37 Server      clwb is selected for pmem flush operation.
+2024-01-24 16:44:52.38 Server      Software Usage Metrics is disabled.
+2024-01-24 16:44:52.39 spid34s     [1]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-24 16:44:52.39 spid34s     Starting up database 'master'.
+2024-01-24 16:44:52.55 Server      Common language runtime (CLR) functionality initialized.
+2024-01-24 16:44:52.62 Server      External governance manager initialized
+2024-01-24 16:44:52.73 spid34s     [32762]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-24 16:44:52.73 spid37s     [32767]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-24 16:44:52.73 spid34s     Starting up database 'model_replicatedmaster'.
+2024-01-24 16:44:52.73 spid37s     Starting up database 'mssqlsystemresource'.
+2024-01-24 16:44:52.73 spid37s     The resource database build version is 16.00.4105. This is an informational message only. No user action is required.
+2024-01-24 16:44:52.75 spid37s     [3]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-24 16:44:52.75 spid37s     Starting up database 'model'.
+2024-01-24 16:44:53.02 spid34s     The tail of the log for database model_replicatedmaster is being rewritten to match the new sector size of 4096 bytes.  2560 bytes at offset 99840 in file /var/opt/mssql/data/model_replicatedmaster.ldf will be written.
+2024-01-24 16:44:53.06 spid34s     Converting database 'model_replicatedmaster' from version 927 to the current version 957.
+2024-01-24 16:44:53.07 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 927 to version 928.
+2024-01-24 16:44:53.09 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 928 to version 929.
+2024-01-24 16:44:53.13 spid44s     A self-generated certificate was successfully loaded for encryption.
+2024-01-24 16:44:53.13 spid44s     Server is listening on [ 'any' <ipv6> 1433] accept sockets 1.
+2024-01-24 16:44:53.13 spid44s     Server is listening on [ 'any' <ipv4> 1433] accept sockets 1.
+2024-01-24 16:44:53.13 Server      Server is listening on [ ::1 <ipv6> 1434] accept sockets 1.
+2024-01-24 16:44:53.13 Server      Server is listening on [ 127.0.0.1 <ipv4> 1434] accept sockets 1.
+2024-01-24 16:44:53.13 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 929 to version 930.
+2024-01-24 16:44:53.13 Server      Dedicated admin connection support was established for listening locally on port 1434.
+2024-01-24 16:44:53.14 spid44s     Server is listening on [ ::1 <ipv6> 1431] accept sockets 1.
+2024-01-24 16:44:53.14 spid44s     Server is listening on [ 127.0.0.1 <ipv4> 1431] accept sockets 1.
+2024-01-24 16:44:53.14 spid44s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
+2024-01-24 16:44:53.29 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 930 to version 931.
+2024-01-24 16:44:53.31 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 931 to version 932.
+2024-01-24 16:44:53.33 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 932 to version 933.
+2024-01-24 16:44:53.35 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 933 to version 934.
+2024-01-24 16:44:53.37 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 934 to version 935.
+2024-01-24 16:44:53.39 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 935 to version 936.
+2024-01-24 16:44:53.41 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 936 to version 937.
+2024-01-24 16:44:53.42 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 937 to version 938.
+2024-01-24 16:44:53.44 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 938 to version 939.
+2024-01-24 16:44:53.46 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 939 to version 940.
+2024-01-24 16:44:53.48 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 940 to version 941.
+2024-01-24 16:44:53.51 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 941 to version 942.
+2024-01-24 16:44:53.53 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 942 to version 943.
+2024-01-24 16:44:53.78 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 943 to version 944.
+2024-01-24 16:44:53.80 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 944 to version 945.
+2024-01-24 16:44:53.82 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 945 to version 946.
+2024-01-24 16:44:53.84 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 946 to version 947.
+2024-01-24 16:44:53.86 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 947 to version 948.
+2024-01-24 16:44:53.88 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 948 to version 949.
+2024-01-24 16:44:53.90 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 949 to version 950.
+2024-01-24 16:44:53.91 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 950 to version 951.
+2024-01-24 16:44:53.94 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 951 to version 952.
+2024-01-24 16:44:53.96 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 952 to version 953.
+2024-01-24 16:44:53.98 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 953 to version 954.
+2024-01-24 16:44:54.00 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 954 to version 955.
+2024-01-24 16:44:54.02 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 955 to version 956.
+2024-01-24 16:44:54.17 spid34s     Database 'model_replicatedmaster' running the upgrade step from version 956 to version 957.
+2024-01-24 16:44:54.28 spid34s     [32761]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-24 16:44:54.28 spid34s     Starting up database 'model_msdb'.
+2024-01-24 16:44:54.56 spid34s     Converting database 'model_msdb' from version 927 to the current version 957.
+2024-01-24 16:44:54.57 spid34s     Database 'model_msdb' running the upgrade step from version 927 to version 928.
+2024-01-24 16:44:54.59 spid34s     Database 'model_msdb' running the upgrade step from version 928 to version 929.
+2024-01-24 16:44:54.63 spid34s     Database 'model_msdb' running the upgrade step from version 929 to version 930.
+2024-01-24 16:44:54.66 spid34s     Database 'model_msdb' running the upgrade step from version 930 to version 931.
+2024-01-24 16:44:54.68 spid34s     Database 'model_msdb' running the upgrade step from version 931 to version 932.
+2024-01-24 16:44:54.70 spid34s     Database 'model_msdb' running the upgrade step from version 932 to version 933.
+2024-01-24 16:44:54.81 spid34s     Database 'model_msdb' running the upgrade step from version 933 to version 934.
+2024-01-24 16:44:54.83 spid34s     Database 'model_msdb' running the upgrade step from version 934 to version 935.
+2024-01-24 16:44:54.86 spid34s     Database 'model_msdb' running the upgrade step from version 935 to version 936.
+2024-01-24 16:44:54.88 spid34s     Database 'model_msdb' running the upgrade step from version 936 to version 937.
+2024-01-24 16:44:54.90 spid34s     Database 'model_msdb' running the upgrade step from version 937 to version 938.
+2024-01-24 16:44:54.93 spid34s     Database 'model_msdb' running the upgrade step from version 938 to version 939.
+2024-01-24 16:44:54.95 spid34s     Database 'model_msdb' running the upgrade step from version 939 to version 940.
+2024-01-24 16:44:54.97 spid34s     Database 'model_msdb' running the upgrade step from version 940 to version 941.
+2024-01-24 16:44:54.99 spid34s     Database 'model_msdb' running the upgrade step from version 941 to version 942.
+2024-01-24 16:44:55.01 spid34s     Database 'model_msdb' running the upgrade step from version 942 to version 943.
+2024-01-24 16:44:55.20 spid34s     Database 'model_msdb' running the upgrade step from version 943 to version 944.
+2024-01-24 16:44:55.22 spid34s     Database 'model_msdb' running the upgrade step from version 944 to version 945.
+2024-01-24 16:44:55.36 spid34s     Database 'model_msdb' running the upgrade step from version 945 to version 946.
+2024-01-24 16:44:55.38 spid34s     Database 'model_msdb' running the upgrade step from version 946 to version 947.
+2024-01-24 16:44:55.39 spid34s     Database 'model_msdb' running the upgrade step from version 947 to version 948.
+2024-01-24 16:44:55.41 spid34s     Database 'model_msdb' running the upgrade step from version 948 to version 949.
+2024-01-24 16:44:55.43 spid34s     Database 'model_msdb' running the upgrade step from version 949 to version 950.
+2024-01-24 16:44:55.45 spid34s     Database 'model_msdb' running the upgrade step from version 950 to version 951.
+2024-01-24 16:44:55.48 spid34s     Database 'model_msdb' running the upgrade step from version 951 to version 952.
+2024-01-24 16:44:55.50 spid34s     Database 'model_msdb' running the upgrade step from version 952 to version 953.
+2024-01-24 16:44:55.52 spid34s     Database 'model_msdb' running the upgrade step from version 953 to version 954.
+2024-01-24 16:44:55.54 spid34s     Database 'model_msdb' running the upgrade step from version 954 to version 955.
+2024-01-24 16:44:55.56 spid34s     Database 'model_msdb' running the upgrade step from version 955 to version 956.
+2024-01-24 16:44:55.59 spid34s     Database 'model_msdb' running the upgrade step from version 956 to version 957.
+2024-01-24 16:44:55.69 spid34s     Resource governor reconfiguration succeeded.
+2024-01-24 16:44:55.69 spid52s     Attribute synchronization initialized
+2024-01-24 16:44:55.69 spid34s     SQL Server Audit is starting the audits. This is an informational message. No user action is required.
+2024-01-24 16:44:55.70 spid52s     Attribute synchronization manager initialized
+2024-01-24 16:44:55.70 spid34s     SQL Server Audit has started the audits. This is an informational message. No user action is required.
+2024-01-24 16:44:55.70 spid34s     XE session 'system_health' started.
+2024-01-24 16:44:55.84 spid34s     SQL Trace ID 1 was started by login "sa".
+2024-01-24 16:44:55.86 spid34s     Server name is 'mssql-db'. This is an informational message only. No user action is required.
+2024-01-24 16:44:55.88 spid37s     Clearing tempdb database.
+2024-01-24 16:44:55.88 spid63s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
+2024-01-24 16:44:55.89 spid65s     [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-24 16:44:55.89 spid64s     [4]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-24 16:44:55.89 spid63s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
+2024-01-24 16:44:55.89 spid65s     Starting up database 'Clientes'.
+2024-01-24 16:44:55.89 spid64s     Starting up database 'msdb'.
+2024-01-24 16:44:55.89 spid65s     RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-24 16:44:55.90 spid65s     RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-24 16:44:56.33 spid65s     Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-24 16:44:56.40 spid34s     Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-24 16:44:56.75 spid37s     [2]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-24 16:44:56.75 spid37s     Starting up database 'tempdb'.
+2024-01-24 16:44:57.39 spid35s     Using 'dbghelp.dll' version '4.0.5'
+2024-01-24 16:44:58.92 spid37s     The tempdb database has 8 data file(s).
+2024-01-24 16:44:58.93 spid63s     The Service Broker endpoint is in disabled or stopped state.
+2024-01-24 16:44:58.93 spid63s     The Database Mirroring endpoint is in disabled or stopped state.
+2024-01-24 16:44:58.94 spid63s     Service Broker manager has started.
+2024-01-24 16:44:58.94 spid34s     Recovery is complete. This is an informational message only. No user action is required.
+2024-01-24 16:48:15.50 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 16:48:15.50 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 16:53:16.01 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 16:53:16.01 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 16:58:16.09 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 16:58:16.09 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 17:03:16.19 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 17:03:16.19 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 17:08:16.28 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 17:08:16.28 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 17:13:16.37 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 17:13:16.37 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 17:18:16.46 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 17:18:16.46 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 17:23:16.53 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 17:23:16.53 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 17:28:16.63 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 17:28:16.63 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 17:33:16.72 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 17:33:16.72 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 17:38:16.79 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 17:38:16.79 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 17:43:16.88 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 17:43:16.88 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 17:44:50.95 spid9s      [DevOpsSnapshotTelemetryTask] Evaluating the background task.
+2024-01-24 17:48:16.97 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 17:48:16.97 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 17:53:17.05 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 17:53:17.05 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 17:58:17.13 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 17:58:17.13 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 18:03:17.22 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 18:03:17.22 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 18:08:17.30 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 18:08:17.30 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 18:13:17.38 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 18:13:17.38 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 18:18:17.47 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 18:18:17.47 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 18:23:17.56 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 18:23:17.56 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 18:28:17.64 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 18:28:17.64 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 18:33:17.73 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 18:33:17.73 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 18:38:17.82 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 18:38:17.82 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 18:43:17.89 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 18:43:17.89 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 18:48:17.99 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 18:48:17.99 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 18:53:18.07 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 18:53:18.07 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 18:58:18.15 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 18:58:18.15 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 19:03:18.24 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 19:03:18.24 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 19:08:18.33 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 19:08:18.33 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 19:13:18.41 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 19:13:18.41 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 19:18:18.51 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 19:18:18.51 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 19:23:18.59 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 19:23:18.59 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 19:28:18.68 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 19:28:18.68 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 19:33:18.76 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 19:33:18.76 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 19:38:18.85 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 19:38:18.85 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 19:43:18.94 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 19:43:18.94 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 19:48:19.04 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 19:48:19.04 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 19:53:19.14 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 19:53:19.14 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 19:58:19.22 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 19:58:19.22 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 20:03:19.30 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 20:03:19.30 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 20:08:19.40 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 20:08:19.40 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 20:13:19.48 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 20:13:19.48 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 20:18:19.57 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 20:18:19.57 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 20:23:19.65 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 20:23:19.65 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 20:28:19.74 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 20:28:19.74 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 20:33:19.82 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 20:33:19.82 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 21:04:43.92 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 21:04:43.92 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 21:09:44.01 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 21:09:44.01 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 21:14:44.10 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 21:14:44.10 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 21:19:44.18 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 21:19:44.18 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 21:24:44.27 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 21:24:44.27 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 21:29:44.35 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 21:29:44.35 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 21:34:44.44 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 21:34:44.44 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 21:39:44.52 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 21:39:44.52 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 21:44:44.60 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 21:44:44.60 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 21:49:44.69 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 21:49:44.69 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 21:54:44.79 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 21:54:44.79 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 21:59:44.87 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 21:59:44.87 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 22:04:44.96 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 22:04:44.96 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 22:09:45.05 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 22:09:45.05 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 22:14:45.12 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 22:14:45.12 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 22:19:45.21 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 22:19:45.21 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 22:24:45.30 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 22:24:45.30 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 22:29:45.38 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 22:29:45.38 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-24 22:34:45.48 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-24 22:34:45.48 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]

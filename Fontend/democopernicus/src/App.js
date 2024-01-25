@@ -13,10 +13,6 @@ function App() {
         <Route path="/" element={<Clientes />} />
         <Route path="/NuevoCliente" element={<CreateCliente />} />
         <Route path="/EditarCliente/:idCliente" element={<UpdateCliente />} />
-
-        {/* <Route path="/portfolio/:projectTitle" element={<ProjectDetails />} /> */}
-        {/* Fallback route for unknown paths */}
-        {/* <Route path="*" element={<Navigate to="/404" />} /> */}
       </Routes>
     </>
   );
