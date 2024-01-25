@@ -1,8 +1,10 @@
 # DemoCopernicus
 ## Background
-Introducción:
+
 La prueba técnica busca evaluar las habilidades del desarrollador en frontend/backend, considerando la capacidad para enfrentar y resolver un caso de uso práctico. 
 Para ello se ha optado por seguir los principios SOLID y seguir la arquitectura CLEAN.
+## Arquitectura 
+Se ha decidido usar una tecnología CLEAN. 
 
 ## Tecnologías utilizadas
 ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) 
