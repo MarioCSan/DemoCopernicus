@@ -20,7 +20,7 @@ public class CreateClienteDTO
     public String Company { get; set; }
 
     [Required]
-    public DateTimeOffset? CreatedAt { get; set; }
+    public DateTime? CreatedAt { get; set; }
     
     [Required]
     public String Country { get; set; }

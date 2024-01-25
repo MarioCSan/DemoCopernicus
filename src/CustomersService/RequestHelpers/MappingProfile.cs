@@ -11,7 +11,7 @@ public class MappingProfiles : Profile
     {
         // Mapeo para crear un Cliente a partir de un CreateClienteDTO
         CreateMap<CreateClienteDTO, Cliente>()
-            .ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(src => src.CreatedAt ?? DateTimeOffset.UtcNow));
+            .ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(src => src.CreatedAt));
 
         // Mapeo para actualizar un Cliente a partir de un UpdateClienteDTO
         CreateMap<UpdateClienteDTO, Cliente>()

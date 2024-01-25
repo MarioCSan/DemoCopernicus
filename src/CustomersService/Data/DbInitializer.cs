@@ -25,10 +25,7 @@ public class DbInitializer
         }
 
         List<Cliente> clientesRecuperados = await RecoveryData.RecoveryDataGithub();
-
-        var ultimoId = context.Clientes.OrderByDescending(c => c.Id).FirstOrDefault()?.Id ?? 0;
-
-        
+                
         context.AddRange(clientesRecuperados);
 
         await context.SaveChangesAsync();

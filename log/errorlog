@@ -155,3 +155,37 @@
 2024-01-25 10:06:35.17 spid56s     The Database Mirroring endpoint is in disabled or stopped state.
 2024-01-25 10:06:35.17 spid56s     Service Broker manager has started.
 2024-01-25 10:06:35.18 spid34s     Recovery is complete. This is an informational message only. No user action is required.
+2024-01-25 10:10:12.55 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-25 10:10:12.55 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-25 10:15:12.65 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-25 10:15:12.65 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-25 10:20:12.74 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-25 10:20:12.74 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-25 10:25:12.82 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-25 10:25:12.82 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-25 10:30:12.91 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-25 10:30:12.91 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-25 10:35:13.01 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-25 10:35:13.01 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-25 10:40:13.09 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-25 10:40:13.09 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-25 10:43:31.58 spid51      Setting database option SINGLE_USER to ON for database 'Clientes'.
+2024-01-25 10:43:49.90 Logon       Error: 18456, Severity: 14, State: 38.
+2024-01-25 10:43:49.90 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'Clientes'. [CLIENT: 172.20.0.1]
+2024-01-25 10:43:50.77 spid51      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-25 10:43:50.78 spid51      Starting up database 'Clientes'.
+2024-01-25 10:43:50.78 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-25 10:43:50.78 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-25 10:43:51.01 spid51      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-25 10:43:51.03 spid51      Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-25 10:43:51.13 spid51      Setting database option READ_COMMITTED_SNAPSHOT to ON for database 'Clientes'.
+2024-01-25 10:43:51.21 spid51      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-01-25 10:43:51.21 spid51      Starting up database 'Clientes'.
+2024-01-25 10:43:51.21 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-01-25 10:43:51.21 spid51      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-01-25 10:43:51.43 spid51      Parallel redo is started for database 'Clientes' with worker pool size [6].
+2024-01-25 10:43:51.48 spid47s     Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
+2024-01-25 10:45:13.17 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-25 10:45:13.17 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-25 10:50:13.26 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-25 10:50:13.26 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
