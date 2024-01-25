@@ -209,3 +209,6 @@
 2024-01-25 10:57:09.59 spid22s     Parallel redo is shutdown for database 'Clientes' with worker pool size [6].
 2024-01-25 11:00:13.43 Logon       Error: 18456, Severity: 14, State: 5.
 2024-01-25 11:00:13.43 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-25 11:05:13.50 Logon       Error: 18456, Severity: 14, State: 5.
+2024-01-25 11:05:13.50 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.20.0.1]
+2024-01-25 11:06:27.04 spid1s      [DevOpsSnapshotTelemetryTask] Evaluating the background task.
